@@ -1,0 +1,48 @@
+.lineup-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 91%;
+}
+.card-container{
+    flex-direction: row;
+    margin-top: 10%;
+}
+.lineup-logo{
+    position: absolute;
+    max-width: 14%;
+    max-height: 10%;
+    margin-bottom: 30%;
+}
+.cover-img{
+    max-height: 45vh;
+    max-width: 20vw;
+}
+.card{
+    background-color: antiquewhite;
+}
+
+.title{
+    color: var(--deep-yellow);
+    text-align: end;
+    overflow-y: visible;
+    
+}
+.card p{
+    padding-top: 1rem;
+    line-height: 150%;
+    color: white;
+}
+.hidden{
+    display: none;
+}
+
+.expand{
+    overflow: hidden;
+}
+
+.modular-open{
+    max-width: 55vw;
+    max-height: 45vh;
+}
