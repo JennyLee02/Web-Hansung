@@ -1,0 +1,26 @@
+.about-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 91%;
+}
+
+.homeLogo{
+    max-width: 14%;
+    max-height: 10%;
+    margin-bottom: 40px;
+}
+.teamPhoto{
+    max-width: 50vw;
+    max-height: 40vh;
+    margin-bottom: 30px;
+}
+
+.about-text{
+    text-align: center;
+    font-style: light;
+    font-weight: 300;
+    max-width: 60vw;
+    font-size: 16px;
+}

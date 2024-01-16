@@ -1,5 +1,6 @@
 import './home.css';
 import MainHeader from '../../components/MainHeader';
+import { About } from './About';
 import { useTranslation } from 'react-i18next';
 
 
@@ -8,9 +9,7 @@ const Home = () => {
   return (
     <div>
       <MainHeader/>
-      <div>
-        <p>{t('Intro.1')}</p>
-      </div>
+      <About/>
     </div>
     
   )
