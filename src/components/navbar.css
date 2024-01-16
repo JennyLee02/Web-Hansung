@@ -1,0 +1,163 @@
+nav {
+    height: 6rem;
+    width: 100vw;
+    background: white;
+    display: grid;
+    place-items: center;
+    position:sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    box-shadow: 0 2px 3cqh rgba(0, 0, 0, 0.2);
+}
+
+.nav__toggle-btn{
+    display: none;
+}
+.nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    width: 10rem;
+}
+
+.nav__links {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    margin-right: 5rem;
+}
+
+.nav__links a{
+    transition: var(--transition);
+}
+
+.nav__links a:hover {
+    color: var(--deep-yellow);
+}
+
+.active-nav {
+    position: relative
+}
+
+.active-nav::after {
+    content: "";
+    width: 70%;
+    height: 2px;
+    background-color: var(--deep-yellow);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+/* Localization Button Styling */
+.locale-btn{
+    position: relative;
+    margin-left: 30px;
+}
+.locale-btn button:hover{
+    background-color: lightgray;
+    border-radius: 3px;
+}
+
+.locale-btn span{
+    font-style: Light;
+    font-weight: 300;
+    position: relative;
+    bottom: 1px;
+}
+.locale-btn span:hover {
+    cursor: default;
+}
+.icon__globe {
+    position: relative;
+    top: 1px; 
+    left: 5px;
+    color: gray;
+}
+
+/* only on small and medium devices */
+@media screen and (max-width: 1307px) {
+    .nav__toggle-btn {
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        cursor: pointer;
+        z-index: 100; 
+    }
+
+    .nav__toggle-btn svg {
+        color: var(--text-color);
+    }
+
+    .nav__links {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Start off the screen */
+        height: 100%;
+        width: 50vw; 
+        flex-direction: column;
+        background-color: rgba(255,255,255,0.8); 
+        overflow-x: hidden;
+        transition: 0.8s; /* Smooth transition for sliding in */
+        padding-top: 8rem; /* Height of the nav bar */
+        align-items: center; 
+    }
+
+    .nav__links li {
+        width: 100%; /* Full width */
+    }
+
+    .nav__links li a {
+        padding: 1rem;
+        width: 100%; /* Full width */
+        box-shadow: none; /* No shadow */
+    }
+
+    .locale-btn {
+        position: fixed;
+        margin-left: 18px;
+    }
+
+    .locale-btn button{
+        background: transparent;
+    }
+
+    .nav__links a:hover {
+        color: var(--deep-yellow);
+    }
+
+    .active-nav {
+        position: relative
+    }
+    
+    .active-nav::after {
+        content: "";
+        width: 60%;
+        height: 2px;
+        background-color: var(--deep-yellow);
+        position: absolute;
+        bottom: 10px;
+        left: 1rem;
+        transition: width 0.3s ease, left 0.3s ease;
+    }
+
+    /* To show the navigation */
+    .show__nav {
+        right: -18%; /* Bring the menu on screen */
+    }
+
+    .hide__nav {
+        right: -100%;
+    }   
+
+}
+
+
+

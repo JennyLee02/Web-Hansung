@@ -1,0 +1,19 @@
+
+
+{
+    "slides": [
+        {
+            "src":"/image_data/main_slider/slider1.png",
+            "alt":"위례 story box 사진"
+        },
+        {
+            "src":"/image_data/main_slider/slider2.png",
+            "alt":"양평 주말주택 사진"
+        },
+        {
+            "src":"/image_data/main_slider/slider3.png",
+            "alt":"혜음지 방문자센터 사진"
+        }
+    ]
+}
+
