@@ -10,26 +10,32 @@
     position: absolute;
     max-width: 14%;
     max-height: 10%;
-    margin-bottom: 30%;
+    margin-bottom: 25%;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 10%;
 }
 
 .card{
     position: relative;
-    height: 40vh;
-    background-color: #fff;
-    padding: 2rem;
+    background-color: black;
     border-radius: 0.2rem;
     cursor: pointer;
-
+    z-index: 1;
+    height: 45vh;
 }
 
 .card h1{
     position: absolute;
     font-size: 3rem;
     font-weight: 600;
-    bottom: -7rem;
     left: 3rem;
     color: var(--deep-yellow);
+    z-index: 3;
 }
 
 .card p{
@@ -38,20 +44,26 @@
     margin-bottom: 1rem;
     margin-left: 18rem;
     margin-top: 0.5rem;
+    z-index: 3;
 }
 
-.default-img{
-    width: 20vw;
-    height: 45vh;
-}
-
-.expand-img{
-    width: 60vw;
-    height: 45vh;
-}
 
 .content-row{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
+.card-expanded {
+    z-index: 10;
+    position: absolute;
+    opacity: 1;
+    width: 60vw;
+    height: 40vh;
+}
+
+.card-collapsed{
+    width: 20vw;
+    height: 45vh;
+}
+

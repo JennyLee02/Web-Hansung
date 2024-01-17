@@ -10,8 +10,14 @@
     },
     {
         "id": 2,
-        "default_img":"/image_data/home_lineup/closed/modular.png",
-        "expanded_img":"/image_data/home_lineup/open/modular_expand.png",
-        "title": "MODULAR"
+        "defaultImage":"/image_data/home_lineup/closed/kanane.png",
+        "expandedImage":"/image_data/home_lineup/open/modular_expand.png",
+        "title": "KANANE'"
+    },
+    {
+        "id": 3,
+        "defaultImage":"/image_data/home_lineup/closed/cabin.png",
+        "expandedImage":"/image_data/home_lineup/open/modular_expand.png",
+        "title": "CABIN"
     }
 ]
