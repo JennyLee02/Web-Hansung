@@ -25,7 +25,7 @@ function CarouselComponent() {
             <BsArrowLeftCircleFill className='arrow arrow-left' onClick={previousSlide}/>
             <Carousel 
                 autoplay 
-                autoplaySpeed={5000}
+                autoplaySpeed={4000}
                 ref={carouselRef} 
                 beforeChange={(from, to) => setSlide(to)}
                 dots={false}

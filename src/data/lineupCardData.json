@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "defaultImage":"/image_data/home_lineup/closed/modular.png",
+        "altClosed":"모듈러 건축 이미지",
+        "expandedImage":"/image_data/home_lineup/open/modular_expand.png",
+        "altOpen":"모듈러 건축 이미지",
+        "title": "MODULAR",
+        "description": "한성모듈러의 주 업무 분야중 하나는 모듈러 건축물 입니다. 모듈러 공법을 통해 주택, 오피스, 공공시설 등 많은 시설을 선보입니다."
+    },
+    {
+        "id": 2,
+        "default_img":"/image_data/home_lineup/closed/modular.png",
+        "expanded_img":"/image_data/home_lineup/open/modular_expand.png",
+        "title": "MODULAR"
+    }
+]
