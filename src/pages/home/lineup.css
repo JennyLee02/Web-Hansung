@@ -7,17 +7,17 @@
 }
 
 .lineup-logo{
-    position: absolute;
     max-width: 14%;
-    max-height: 10%;
-    margin-bottom: 25%;
+    max-height: 12%;
+    margin-bottom: 2rem;
 }
 
 .card-container{
+    margin-bottom: 2rem;
     display: flex;
     justify-content: center;
     position: relative;
-    margin-top: 10%;
+    gap:1rem;
 }
 
 .card{
@@ -27,24 +27,24 @@
     cursor: pointer;
     z-index: 1;
     height: 45vh;
+    overflow: visible;
 }
 
 .card h1{
     position: absolute;
     font-size: 3rem;
     font-weight: 600;
-    left: 3rem;
+    bottom:-2rem;
     color: var(--deep-yellow);
-    z-index: 3;
+    z-index: 12;
 }
 
 .card p{
     font-size: 0.85rem;
     font-weight: 400;
-    margin-bottom: 1rem;
-    margin-left: 18rem;
-    margin-top: 0.5rem;
-    z-index: 3;
+    margin-top: 25rem;
+    z-index: 15;
+    color: black;
 }
 
 
@@ -59,11 +59,17 @@
     position: absolute;
     opacity: 1;
     width: 60vw;
-    height: 40vh;
+    height: 45vh;
 }
 
 .card-collapsed{
     width: 20vw;
     height: 45vh;
+    opacity: 1;
 }
 
+.hidden-title {
+    opacity: 0; /* Hide the title */
+    visibility: hidden; /* Ensure it's not clickable or selectable */
+    transition: opacity 0.5s ease;
+}

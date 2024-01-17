@@ -8,13 +8,13 @@
 
 .homeLogo{
     max-width: 14%;
-    max-height: 10%;
-    margin-bottom: 40px;
+    max-height: 12%;
+    margin-bottom: 2rem;
 }
 .teamPhoto{
     max-width: 50vw;
     max-height: 40vh;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 }
 
 .about-text{
