@@ -5,6 +5,7 @@ import HomeLogo from '../../images/Home/HomeLogo.png';
 import './lineup.css';
 
 
+
 export const Lineup = () => {
     const [expandedCard, setExpandedCard] = useState(null);
 

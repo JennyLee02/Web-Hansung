@@ -10,3 +10,25 @@
     }
   }
   
+
+
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+}
+
+.down-arrow{
+    position: absolute;
+    background-repeat: no-repeat;
+    color: gray;
+    font-size: 2rem;
+    bottom: 1rem;
+    right: 2rem;
+    transform: translate(-50%, -50%);
+    animation: bounce 1s infinite ease-in-out;
+}

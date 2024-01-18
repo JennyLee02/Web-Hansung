@@ -2,9 +2,18 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    width: 94%;
+    width: 90vw;
     height: 90vh;
     margin: auto; 
+}
+
+.main-header{
+    position: relative;
+    display:flex;
+    /* flex-direction: column;
+    justify-content: center; */
+    align-items: center;
+    height: 90vh;
     scroll-snap-align: start;
 }
 
@@ -36,11 +45,11 @@
 }
 
 .arrow-left {
-    left: 1rem; /* Adjust as needed */
+    left: 2rem; /* Adjust as needed */
 }
 
 .arrow-right {
-    right: 1rem; /* Adjust as needed */
+    right: 2rem; /* Adjust as needed */
 }
 
 .indicators {
@@ -69,3 +78,4 @@
 .indicator-inactive {
     background-color: gray;
 }
+

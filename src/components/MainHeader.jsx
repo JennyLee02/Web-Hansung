@@ -1,13 +1,19 @@
 import React from 'react';
 import CarouselComponent from "./Carousel"
 import slides from "../data/carouselData.json";
+import { CgArrowLongDown } from "react-icons/cg";
+import './Carousel.css';
+import '../pages/home/home.css';
 
-const Header = () => {
+const MainHeader = ({scrollTo, goToSectionRef}) => {
   return (
-    <header className='main__header'>
+    <div className='main-header'>
       <CarouselComponent data={slides}/>
-    </header>
+      <CgArrowLongDown className='down-arrow' onClick={() => scrollTo(goToSectionRef)}/>
+
+    </div>
+    
   )
 }
 
-export default Header
+export default MainHeader
