@@ -3,8 +3,9 @@
     justify-content: center;
     align-items: center;
     width: 94%;
-    height: 91%;
+    height: 90vh;
     margin: auto; 
+    scroll-snap-align: start;
 }
 
 .slide {

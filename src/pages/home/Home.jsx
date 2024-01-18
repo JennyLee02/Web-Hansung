@@ -9,10 +9,13 @@ const Home = () => {
   const {t, i18n} = useTranslation();
   return (
     <div>
-      <MainHeader/>
-      <About/>
-      <Lineup/>
+      <div className='snap-container'>
+        <MainHeader/>
+        <About/>
+        <Lineup/>
+      </div>
     </div>
+
     
   )
 }
