@@ -26,7 +26,6 @@
 
     --transition: all 500ms ease;
 
-    white-space: pre-line;
 }
 
 
@@ -84,9 +83,3 @@
     width: 100%;
   }
 
-  html {
-    border: 5px solid red; /* Just for debugging purposes */
-
-    overflow-x: hidden;
-  }
-  
