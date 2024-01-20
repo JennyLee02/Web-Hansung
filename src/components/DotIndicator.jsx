@@ -1,15 +1,19 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
+import './dotIndicator.css'; // Assuming you have a separate CSS file for styling
 
-export const DotIndicator = ({ sections, currentSection, onDotClick}) => {
+const DotIndicator = ({ isActive, onClick }) => {
   return (
-    <div className="dot-indicator">
-      {sections.map((section, index) => (
-        <div
-          key={section.id}
-          className={`dot ${currentSection === index ? 'active' : ''}`}
-          onClick={() => onDotClick(index)}
-        />
-      ))}
-    </div>
-  )
-}
+    <button 
+      className={`dot-indicator ${isActive ? 'active' : ''}`}
+      onClick={onClick}
+    />
+  );
+};
+
+DotIndicator.propTypes = {
+  isActive: PropTypes.bool.isRequired,
+  onClick: PropTypes.func.isRequired
+};
+
+export default DotIndicator;

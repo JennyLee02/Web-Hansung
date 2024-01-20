@@ -4,16 +4,21 @@ import MainHeader from '../../components/MainHeader';
 import { About } from './About';
 import {Lineup} from './Lineup';
 import { useTranslation } from 'react-i18next';
+import DotIndicator from '../../components/DotIndicator';
+import '../../components/dotIndicator.css';
 
 
 const Home = () => {
+  const [activeSection, setActiveSection] =useState(0);
 
+  // for snap scroll
   const section1 = useRef();
   const section2 = useRef();
   const section3 = useRef();
 
-  function scrollTo(section) {
+  function scrollTo(section, index) {
     section.current.scrollIntoView({behavior: "smooth"});
+    setActiveSection(index);
   }
 
   // for multi language support
@@ -34,7 +39,17 @@ const Home = () => {
         <div ref={section3}>
           <Lineup/>
         </div>
-        
+    
+      </div>
+
+      <div className='dot-indicators'>
+        {[section1, section2, section3].map((section, index) => (
+          <DotIndicator 
+            key={index} 
+            isActive={activeSection === index}
+            onClick={() => scrollTo(section, index)}
+          />
+        ))}
       </div>
     </div>
 
@@ -43,3 +58,9 @@ const Home = () => {
 }
 
 export default Home
+
+
+//내일 해야할일
+// 1. 스냅 스크롤 인디케이터 구현
+// 2. 홈 화면 반응형 구현
+// 3. Footer 구현

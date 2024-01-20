@@ -1,0 +1,28 @@
+.dot-indicators {
+    position: fixed; 
+    display: flex;
+    flex-direction: column;
+    right: 2rem;    
+    top: 50%;        
+    z-index: 1000;   
+  }
+  
+  .dot-indicator {
+    width: 1rem;
+    height: 1rem;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #bbb;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot-indicator.active {
+    background-color: #333;
+  }
+
+  .dot-indicator:hover{
+    background-color: var(--deep-yellow);
+  }
+  
