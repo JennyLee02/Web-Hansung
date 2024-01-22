@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import './home.css';
 import MainHeader from '../../components/MainHeader';
 import { About } from './About';
@@ -20,6 +20,37 @@ const Home = () => {
     section.current.scrollIntoView({behavior: "smooth"});
     setActiveSection(index);
   }
+  
+  useEffect(() => {
+    const options = {
+      threshold: 0.5, 
+    };
+  
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const index = Number(entry.target.getAttribute('data-index'));
+          setActiveSection(index);
+        }
+      });
+    }, options);
+  
+    [section1, section2, section3].forEach((section, index) => {
+      if (section.current) {
+        section.current.setAttribute('data-index', index);
+        observer.observe(section.current);
+      }
+    });
+  
+    return () => {
+      [section1, section2, section3].forEach((section) => {
+        if (section.current) {
+          observer.unobserve(section.current);
+        }
+      });
+    };
+  }, []); 
+  
 
   // for multi language support
   const {t, i18n} = useTranslation();
@@ -29,14 +60,14 @@ const Home = () => {
     <div>
       <div className='snap-container'>
         <div ref={section1}>
-          <MainHeader scrollTo={scrollTo} goToSectionRef={section2}/>
+          <MainHeader scrollTo={scrollTo} goToSectionRef={section2} data-index='0'/>
         </div>
 
         <div ref={section2}>
-          <About scrollTo={scrollTo} goToSectionRef={section3}/>
+          <About scrollTo={scrollTo} goToSectionRef={section3} data-index='1'/>
         </div>
 
-        <div ref={section3}>
+        <div ref={section3} data-index='2'>
           <Lineup/>
         </div>
     
@@ -61,6 +92,6 @@ export default Home
 
 
 //내일 해야할일
-// 1. 스냅 스크롤 인디케이터 구현
 // 2. 홈 화면 반응형 구현
 // 3. Footer 구현
+// 4.  스냅스크롤 인디케이터 업데이트 버그
