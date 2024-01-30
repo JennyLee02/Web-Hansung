@@ -3,6 +3,7 @@ import {LineupCard} from './Lineup_card';
 import cardData from '../../data/lineupCardData.json';
 import HomeLogo from '../../images/Home/HomeLogo.png';
 import './lineup.css';
+import {Footer} from '../../components/Footer';
 
 
 
@@ -26,6 +27,9 @@ export const Lineup = () => {
                         hideTitle={expandedCard !== null && expandedCard !== card.id}
                     />
                 ))}
+            </div>
+            <div>
+                {/* <Footer/> */}
             </div>
         </div>
     );

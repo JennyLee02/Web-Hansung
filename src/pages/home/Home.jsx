@@ -3,6 +3,7 @@ import './home.css';
 import MainHeader from '../../components/MainHeader';
 import { About } from './About';
 import {Lineup} from './Lineup';
+import { Footer } from '../../components/Footer';
 import { useTranslation } from 'react-i18next';
 import DotIndicator from '../../components/DotIndicator';
 import '../../components/dotIndicator.css';
@@ -70,8 +71,8 @@ const Home = () => {
         <div ref={section3} data-index='2'>
           <Lineup/>
         </div>
-    
       </div>
+
 
       <div className='dot-indicators'>
         {[section1, section2, section3].map((section, index) => (
@@ -94,4 +95,3 @@ export default Home
 //내일 해야할일
 // 2. 홈 화면 반응형 구현
 // 3. Footer 구현
-// 4.  스냅스크롤 인디케이터 업데이트 버그

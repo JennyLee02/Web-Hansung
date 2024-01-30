@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <nav>
-        <div className="container nav__container">
+        <div className="nav__container">
             <Link to="/" className='logo'>
                 <img src={Logo} alt="Hansung Logo" onClick={handleNavLinkClick}/>
             </Link>
@@ -50,8 +50,8 @@ const Navbar = () => {
                 }
 
                 {/* localization Button */}
-                <li>
-                    <div className='locale-btn'>
+                <li className='locale-btn'> 
+                    <div>
                         <button onClick={()=>handleLanguageClick('en')}>
                             EN
                         </button>
