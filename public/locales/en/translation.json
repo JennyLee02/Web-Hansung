@@ -1,6 +1,11 @@
 {
     "Home":{
-        "about": "Hansung Modular is dedicated to creating beautiful spaces with customer delight and satisfaction as our top priority, based on modular architecture. We promise to be a company that always listens to even the smallest voice of each and every customer, communicating with them through the accumulated know-how and skills of our professional designers."
+        "about": "Hansung Modular is dedicated to creating beautiful spaces with customer delight and satisfaction as our top priority, based on modular architecture. We promise to be a company that always listens to even the smallest voice of each and every customer, communicating with them through the accumulated know-how and skills of our professional designers.",
+        "lineup":{
+            "modular":"One of Hansung Modular's main areas of work is modular buildings. Through modular construction methods, we present many facilities including housing, offices, and public facilities.",
+            "kanane":"One of Hansung Modular's main areas of work is modular buildings. Through modular construction methods, we present many facilities including housing, offices, and public facilities.",
+            "cabin":"One of Hansung Modular's main areas of work is modular buildings. Through modular construction methods, we present many facilities including housing, offices, and public facilities."
+        }
     },
 
     "Manufacturing":{

@@ -6,20 +6,20 @@
         "expandedImage":"/image_data/home_lineup/open/modular_expand.png",
         "altOpen":"모듈러 건축 이미지",
         "title": "MODULAR",
-        "description": "한성모듈러의 주 업무 분야중 하나는 모듈러 건축물 입니다. 모듈러 공법을 통해 주택, 오피스, 공공시설 등 많은 시설을 선보입니다."
+        "description": "Home.lineup.modular"
     },
     {
         "id": 2,
         "defaultImage":"/image_data/home_lineup/closed/kanane.png",
         "expandedImage":"/image_data/home_lineup/open/modular_expand.png",
         "title": "KANANE'",
-        "description": "한성모듈러의 주 업무 분야중 하나는 모듈러 건축물 입니다. 모듈러 공법을 통해 주택, 오피스, 공공시설 등 많은 시설을 선보입니다."
+        "description": "Home.lineup.kanane"
     },
     {
         "id": 3,
         "defaultImage":"/image_data/home_lineup/closed/cabin.png",
         "expandedImage":"/image_data/home_lineup/open/modular_expand.png",
         "title": "CABIN",
-        "description": "한성모듈러의 주 업무 분야중 하나는 모듈러 건축물 입니다. 모듈러 공법을 통해 주택, 오피스, 공공시설 등 많은 시설을 선보입니다."
+        "description": "Home.lineup.cabin"
     }
 ]
