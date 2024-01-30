@@ -94,4 +94,3 @@ export default Home
 
 //내일 해야할일
 // 2. 홈 화면 반응형 구현
-// 3. Footer 구현

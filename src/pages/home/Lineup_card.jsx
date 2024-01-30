@@ -18,15 +18,18 @@ export const LineupCard = ({ id, defaultImage, expandedImage, title, description
             <motion.div className='card-content'>
                 <motion.h1 layout='position' className={hideTitle ? 'hidden-title' : ''}>{title}</motion.h1>
                 {isOpen && (
-                    <motion.p
-                        layout='position'
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 1, ease: "easeInOut" }}
-                    >
-                        {description}
-                    </motion.p>
+                    <motion.div className='text-box'>
+                        <motion.p
+                            layout='position'
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 1, ease: "easeInOut" }}
+                        >
+                            {description}
+                        </motion.p>
+                    </motion.div>
+                    
                 )}
             </motion.div>
         </motion.div>
