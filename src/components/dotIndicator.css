@@ -1,11 +1,4 @@
-.dot-indicators {
-    position: fixed; 
-    display: flex;
-    flex-direction: column;
-    right: 2rem;    
-    top: 50%;        
-    z-index: 1000;   
-  }
+
   
   .dot-indicator {
     width: 1rem;
@@ -26,3 +19,4 @@
     background-color: var(--deep-yellow);
   }
   
+

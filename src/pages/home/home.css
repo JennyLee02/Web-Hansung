@@ -10,7 +10,14 @@
     }
   }
   
-
+.dot-indicators {
+  position: fixed; 
+  display: flex;
+  flex-direction: column;
+  right: 2rem;    
+  top: 50%;        
+  z-index: 1000;   
+}
 
 
 @keyframes bounce {
@@ -31,4 +38,16 @@
     right: 2rem;
     transform: translate(-50%, -50%);
     animation: bounce 1s infinite ease-in-out;
+}
+
+@media screen and (max-width: 1300px){
+  .dot-indicators{
+    display: none;
+  }
+  /* .snap-container{
+    scroll-snap-type: none;
+  } */
+  .down-arrow{
+    display: none;
+  }
 }

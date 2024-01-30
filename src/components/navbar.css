@@ -86,12 +86,13 @@ nav {
 }
 
 /* only on small and medium devices */
-@media screen and (max-width: 1307px) {
+@media screen and (max-width: 1300px) {
     .nav__toggle-btn {
         display: inline-block;
         background: transparent;
         font-size: 1.8rem;
         cursor: pointer;
+        margin-right:5vw;
         z-index: 100; 
     }
 
@@ -106,7 +107,7 @@ nav {
         height: 100%;
         width: 50vw; 
         flex-direction: column;
-        background-color: rgba(255,255,255,0.8); 
+        background-color: rgba(255,255,255,0.9); 
         overflow-x: hidden;
         transition: 0.8s; /* Smooth transition for sliding in */
         padding-top: 8rem; /* Height of the nav bar */
@@ -114,18 +115,18 @@ nav {
     }
 
     .nav__links li {
-        width: 100%; /* Full width */
+        width: 100%; 
     }
 
     .nav__links li a {
         padding: 1rem;
-        width: 100%; /* Full width */
-        box-shadow: none; /* No shadow */
+        width: 100%; 
+        box-shadow: none; 
     }
 
     .locale-btn {
-        position: fixed;
-        margin-left: 18px;
+        /* position: fixed; */
+        padding: 1rem;
     }
 
     .locale-btn button{

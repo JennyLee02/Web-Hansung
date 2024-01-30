@@ -9,8 +9,9 @@
 }
 
 .homeLogo{
-    max-width: 14%;
-    max-height: 12%;
+    position: relative;
+    width: auto;
+    height: 10vh;
     margin-bottom: 2rem;
 }
 .teamPhoto{

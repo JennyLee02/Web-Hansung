@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './dotIndicator.css'; // Assuming you have a separate CSS file for styling
+import './dotIndicator.css'; 
 
 const DotIndicator = ({ isActive, onClick }) => {
   return (

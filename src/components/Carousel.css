@@ -5,6 +5,7 @@
     width: 90vw;
     height: 90vh;
     margin: auto; 
+    overflow-x: hidden;
 }
 
 .main-header{

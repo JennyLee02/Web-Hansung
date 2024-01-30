@@ -8,8 +8,9 @@
 }
 
 .lineup-logo{
-    max-width: 14%;
-    max-height: 12%;
+    position: relative;
+    width: auto;
+    height: 10vh;
     margin-bottom: 2rem;
 }
 
@@ -86,3 +87,58 @@
     transition: opacity 0.5s ease;
 }
 
+
+@media screen and (max-width: 1300px) {
+    
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        height: 40vw;
+        justify-content: center;
+        position: relative;
+        gap:2rem;
+    }
+    .card{
+        position: relative;
+        background-color: black;
+        border-radius: 0.2rem;
+        cursor: pointer;
+        z-index: 1;
+        height: 20vh;
+        width: 70vw;
+        overflow: visible;
+    }
+    .card-collapsed{
+        width: 70vw;
+        height: 20vh;
+        opacity: 1;
+    }
+    .lineup-logo{
+        display: none;
+    }
+    .card-expanded {
+        z-index: 10;
+        position: absolute;
+        opacity: 1;
+        width: 70vw;
+        height: 60vh;
+    }
+    .text-box {
+        text-align: start;
+        background-color: #ffffff; 
+        padding: 15px; 
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+        color: #333333; 
+        font-size: 0.85rem; 
+        font-weight: 600;
+        line-height: 1.5; 
+        width: 70%; 
+        word-wrap: break-word; 
+        position: absolute; 
+        z-index: 220;
+        bottom: 2rem; 
+        left: 65%; 
+        opacity: 0.8;
+        transform: translateX(-50%); 
+    }
+}
