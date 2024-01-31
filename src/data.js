@@ -23,6 +23,9 @@ export const links = [
         name: "CONTACT",
         path: '/contact'
     },
+]
+
+export const products = [
     {
         name: "KANANE",
         path: '/kanane'

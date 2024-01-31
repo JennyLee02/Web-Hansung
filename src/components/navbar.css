@@ -85,6 +85,31 @@ nav {
     color: gray;
 }
 
+/* Products dropdown menu */
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    top: 70%;
+    padding: 0.5rem;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 5rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Show dropdown on hover */
+nav li:hover .dropdown-content {
+    opacity: 1;
+  transform: translateY(0);
+}
+
+
+
 /* only on small and medium devices */
 @media screen and (max-width: 1300px) {
     .nav__toggle-btn {
@@ -150,6 +175,26 @@ nav {
         bottom: 10px;
         left: 1rem;
         transition: width 0.3s ease, left 0.3s ease;
+    }
+
+    .dropdown-content {
+        
+        gap: 0.5rem;
+        top: 25%;
+        padding: 0.5rem;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        position: absolute;
+        background-color: transparent;
+        box-shadow: none;
+        width: auto;
+        z-index: 1;
+    }
+    
+    /* Show dropdown on hover */
+    nav li:hover .dropdown-content {
+      transform: translateY(0);
     }
 
     /* To show the navigation */

@@ -1,5 +1,6 @@
 import {Link, NavLink} from 'react-router-dom';
 import {links} from '../data'
+import { products } from '../data';
 import './navbar.css';
 import '../index.css';
 import Logo from '../images/logo.svg';
@@ -43,6 +44,18 @@ const Navbar = () => {
                                         onClick={handleNavLinkClick}>
                                     {name}
                                 </NavLink>
+
+                                {name === "PRODUCTS" && (
+                                    <ul className="dropdown-content">
+                                        {products.map((product, idx) => (
+                                        <li key={idx}>
+                                            <Link to={product.path} onClick={handleNavLinkClick}>
+                                                {product.name}
+                                            </Link>
+                                        </li>
+                                        ))}
+                                    </ul>
+                                )}
                             </li>
                             
                         )
@@ -50,6 +63,7 @@ const Navbar = () => {
 
                     
                 }
+                
 
                 {/* localization Button */}
                 <li className='locale-btn'> 
