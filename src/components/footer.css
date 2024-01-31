@@ -1,11 +1,12 @@
 .footer {
-    height: 8rem;
+    height: 6rem;
     width: 100vw;
     background: grey;
     color: white;
     bottom: 0;
     left: 0;
     z-index: 99;
+    position: absolute;
 }
   
   .footer-content {
@@ -15,8 +16,6 @@
   }
 
   .footer_logo{
-    width: 10rem;
+    width: 8vw;
     margin-left: 4rem;
   }
-
- 

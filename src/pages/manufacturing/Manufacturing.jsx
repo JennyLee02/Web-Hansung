@@ -1,6 +1,7 @@
 import './manufacturing.css';
 import { useTranslation } from 'react-i18next';
 import { Footer } from '../../components/Footer';
+import { Manufacturing_intro } from './Manufacturing_intro';
 
 const Manufacturing = () => {
   const {t, i18n} = useTranslation();
@@ -9,7 +10,7 @@ const Manufacturing = () => {
       <div>
         <p>{t('Manufacturing.1')}</p>
       </div>
-      <div>MANUFACTURING</div>
+      <Manufacturing_intro/>
       <Footer/>
     </div>
   )

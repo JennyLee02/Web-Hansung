@@ -23,6 +23,14 @@ export const links = [
         name: "CONTACT",
         path: '/contact'
     },
+    {
+        name: "KANANE",
+        path: '/kanane'
+    },
+    {
+        name: "CABIN",
+        path: '/cabin'
+    },
 ]
 
 
