@@ -1,0 +1,65 @@
+.intro_container{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.offsite_description{
+    font-weight: 400;
+    padding: 1rem;
+    margin-left: 4vw;
+    width: 30vw;
+    font-size: 18px;
+}
+
+.onsite_description{
+    font-weight: 400;
+    padding: 1rem;
+    width: 30vw;
+    font-size: 18px;
+}
+
+h2{
+    padding: 1rem 1rem 0;
+    font-size: 35px
+}
+
+.offsite_title{
+    margin-left: 4vw;
+}
+
+.offsite_image{
+    width: 40vw;
+}
+
+.onsite_image{
+    width: 40vw;
+    margin-left: 4vw;
+}
+
+.offsite_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin-top: 7vh; */
+    gap: 3rem;
+}
+
+.onsite_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 7vh;
+    gap:3rem;
+}
+
+.onsite_text{
+    display: flex;
+    flex-direction: column;
+}
+.offsite_text{
+    display: flex;
+    flex-direction: column;
+}

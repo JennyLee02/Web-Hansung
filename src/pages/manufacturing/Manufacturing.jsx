@@ -7,9 +7,6 @@ const Manufacturing = () => {
   const {t, i18n} = useTranslation();
   return (
     <div>
-      <div>
-        <p>{t('Manufacturing.1')}</p>
-      </div>
       <Manufacturing_intro/>
       <Footer/>
     </div>
