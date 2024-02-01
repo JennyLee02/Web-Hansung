@@ -1,13 +1,11 @@
 import {useState, React} from 'react';
 import {motion} from 'framer-motion';
-import { useTranslation } from 'react-i18next';
 import './lineup.css';
 
 
 
 
 export const LineupCard = ({ id, defaultImage, expandedImage, title, description, isOpen, toggleOpen, hideTitle}) => {
-    const {t, i18n} = useTranslation();
     return (
         <motion.div 
             layout

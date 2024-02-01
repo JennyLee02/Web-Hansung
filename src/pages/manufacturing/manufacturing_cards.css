@@ -1,0 +1,114 @@
+.text-icon{
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--deep-yellow);
+}
+
+.Mcard-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+.Mcard{
+    width: 15vw;
+    height: 15vw;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s ease;
+
+}
+
+.Mcard-default{
+    color: white;
+    position: absolute; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    text-align: center; 
+    width: 100%; 
+}
+
+.Mcard-img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+.Mcard-title{
+    font-size: 1.5rem;
+}
+
+.Mcard-icon{
+    font-size: 2rem;
+}
+
+.Mcard-description {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.Mcard:hover .Mcard-icon,
+.Mcard:hover .Mcard-title {
+    opacity: 0;
+}
+
+.Mcard:hover .Mcard-description {
+    opacity: 1; 
+    visibility: visible;
+    display: block;
+    color: black;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.Mcard:hover .Mcard-img {
+    opacity: 0.2;
+}
+.Mcard:hover{
+    background-color: white;
+}
+
+.Mcard-description{
+    display: none;
+}
+
+.MCard-page{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.MPage-title{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.Mcard * {
+    transition: opacity 0.5s ease; 
+  }
