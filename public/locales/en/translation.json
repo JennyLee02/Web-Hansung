@@ -9,10 +9,19 @@
     },
 
     "Manufacturing":{
-        "1": "Introducing the Manufacturing Process of Hansung Modular",
         "intro":{
             "offsite":"Hansung Modular's modular construction method carries out over 80% of the process in the factory. This factory manufacturing approach is not affected by weather constraints, which prevents delays in production, and has the advantage of eliminating issues like site control.",
             "onsite":"Once modular production in the factory is complete, the remaining 10-20% of the process takes place on site. Within the given timeline, both the site construction and modular assembly are completed. The assembled modular components can be disassembled at any time and reused at a different site."
+        },
+        "MCard":{
+            "description":{
+                "eco":"Modular construction allows for reinstallations, making it a more environmentally friendly building method compared to traditional buildings.",
+                "faster":"Construction on-site and modular manufacturing proceed simultaneously, making this method 30% faster than traditional construction.",
+                "weather":"Since it's manufactured indoors, this method is not affected by material wear and tear or adverse weather conditions.",
+                "factory":"Factory manufacturing enables finer and more robust finishes, making this construction method possible.",
+                "cost":"Reducing the construction period lowers building costs, making this an economically advantageous construction method.",
+                "service":"The modular production method allows for after-sales service, enhancing the construction technique's appeal."
+            }
         }
     },
 

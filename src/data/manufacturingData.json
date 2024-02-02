@@ -5,7 +5,7 @@
         "alt":"공장 이미지",
         "icon":"PiPlant",
         "title":"ECO FRIENDLY",
-        "description":"모듈러 건축은 재설치가 가능한 건축으로 기존 건축물보다 친환경적인 건축공법입니다."
+        "description":"Manufacturing.MCard.description.eco"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "alt":"공장 이미지",
         "icon":"50%",
         "title":"FASTER",
-        "description":"현장 공사와 모듈 제조의 동시 공사 및 제작 진행으로 기존건축 대비 30% 빠른 건축공법입니다."
+        "description":"Manufacturing.MCard.description.faster"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "alt":"공장 이미지",
         "icon":"TiWeatherDownpour",
         "title":"ANY WEATHER",
-        "description":"실내에서 제작하므로, 자재의 마모성과 악천후에 영향을 받지 않는 건축공법입니다."
+        "description":"Manufacturing.MCard.description.weather"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "alt":"공장 이미지",
         "icon":"PiFactory",
         "title":"FACTORY MADE",
-        "description":"공장제작으로 세밀하고 견고한 마감률을 확보하는것이 가능한 건축공법입니다."
+        "description":"Manufacturing.MCard.description.factory"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "alt":"공장 이미지",
         "icon":"30%",
         "title":"LOWER COST",
-        "description":"공기단축으로 인한 건축비용의 절감률을 높이는 건축공법입니다."
+        "description":"Manufacturing.MCard.description.cost"
     },
     {
         "id": 6,
@@ -45,6 +45,6 @@
         "alt":"공장 이미지",
         "icon":"HiOutlineWrenchScrewdriver",
         "title":"AFTER SERVICE",
-        "description":"모듈식 제작공법으로 AS가 가능한 건축공법입니다."
+        "description":"Manufacturing.MCard.description.service"
     }
 ]

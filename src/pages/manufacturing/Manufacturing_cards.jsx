@@ -2,8 +2,10 @@ import React from 'react';
 import './manufacturing_cards.css';
 import M_Data from '../../data/manufacturingData.json';
 import { M_card } from './M_card';
+import { useTranslation } from 'react-i18next';
 
 export const Manufacturing_cards = () => {
+    const {t, i18n} = useTranslation();
   return (
     <div className='MCard-page'>
         <div className='MPage-title'>MODULAR METHOD</div>
@@ -15,7 +17,7 @@ export const Manufacturing_cards = () => {
                     alt={card.alt}
                     icon={card.icon}
                     title={card.title}
-                    description={card.description}
+                    description={t(card.description)}
                 />
             ))}
         </div>
