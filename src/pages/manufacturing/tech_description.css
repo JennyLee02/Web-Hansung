@@ -1,0 +1,45 @@
+.tech_page{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.tech_title{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+    /* margin-bottom: 3rem; */
+    z-index: 2;
+}
+
+.tech_container{
+    height: 70%;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 3.5rem;
+}
+.tech_image{
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    left: 11rem;
+    z-index: 2;
+}
+
+.street_bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.5;
+}

@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { Footer } from '../../components/Footer';
 import { Manufacturing_intro } from './Manufacturing_intro';
 import { Manufacturing_cards } from './Manufacturing_cards';
+import { Tech_description } from './Tech_description';
+
 
 const Manufacturing = () => {
   const {t, i18n} = useTranslation();
@@ -10,6 +12,7 @@ const Manufacturing = () => {
     <div>
       <Manufacturing_intro/>
       <Manufacturing_cards/>
+      <Tech_description/>
       <Footer/>
     </div>
   )
