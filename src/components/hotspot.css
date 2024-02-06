@@ -1,0 +1,14 @@
+.hotspot-button {
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    position: fixed; /* or absolute, depending on your layout needs */
+    bottom: 20px; /* Adjust as needed to position on the screen */
+    right: 20px; /* Adjust as needed */
+  }
+
+  
