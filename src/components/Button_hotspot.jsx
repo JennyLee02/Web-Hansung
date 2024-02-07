@@ -16,9 +16,9 @@ export const Button_hotspot = ({title, description, image}) => {
         />
         {isVisible && (
             <div className='hotspot-content'>
-                <h2>{title}</h2>
-                <p>{description}</p>
-                <img src={image} alt={title}/>
+                <h2 className='hotspot-title'>{title}</h2>
+                <p className='hotspot-description'>{description}</p>
+                <img className='hotspot-img' src={image} alt={title}/>
             </div>
         )}
     </div>
