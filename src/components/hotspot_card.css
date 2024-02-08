@@ -18,16 +18,18 @@
     left: 38%;
 }
 
-p { 
+.hotspot-card-container p { 
     position: absolute;
     font-weight: 400;
     font-size: 18px;
     padding: 1rem;
-    bottom: 10%;
-    right: 5%;
+    bottom: 3%;
+    right: 3%;
+    background-color: white;
+    border-radius: 10px;
 }
 
-h2{
+.hotspot-card-container h2{
     position: absolute;
     left: 0%;
     top: 10%;

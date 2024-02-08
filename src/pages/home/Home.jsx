@@ -6,11 +6,10 @@ import {Lineup} from './Lineup';
 import { Footer } from '../../components/Footer';
 import { useTranslation } from 'react-i18next';
 import DotIndicator from '../../components/DotIndicator';
-import '../../components/dotIndicator.css';
 
 
 const Home = () => {
-  const [activeSection, setActiveSection] =useState(0);
+  const [activeSection, setActiveSection] = useState(0);
 
   // for snap scroll
   const section1 = useRef();
