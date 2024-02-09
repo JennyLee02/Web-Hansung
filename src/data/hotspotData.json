@@ -2,19 +2,19 @@
     {
         "id": 1,
         "title":"COOLING SYSTEM",
-        "image":"/image_data/manufacturing_card/bolt.jpeg",
+        "image":"/image_data/main_slider/slider1.png",
         "description":"한성 모듈러의 쿨링 시스템은 첨단 기술로 설계되어 빌딩 내외부의 온도를 효과적으로 조절합니다. 이 시스템은 에너지 효율을 극대화하며, 지속 가능한 환경을 조성하는 데 중점을 두고 개발되었습니다. 사용자의 편의에 따라 온도를 자동으로 조절할 수 있으며, 최신 IoT 기술을 통해 원격에서도 관리가 가능합니다. 이로 인해 건물 관리 비용을 절감하고, 쾌적한 생활 환경을 제공합니다."
     },
     {
         "id": 2,
         "title":"HEATING SYSTEM",
-        "image":"/image_data/manufacturing_card/bolt.jpeg",
+        "image":"/image_data/main_slider/slider2.png",
         "description":"한성 모듈러의 히팅 시스템은 고급 에너지 솔루션을 사용하여 겨울철에도 실내 온도를 따뜻하게 유지합니다. 이 시스템은 바닥 난방과 벽 난방을 포함한 다양한 방식으로 설계되어 있어, 공간별로 최적의 온도를 제공합니다. 또한, 자동 온도 조절 기능과 함께 최소한의 에너지로 최대 효과를 낼 수 있도록 에너지 사용을 최적화합니다. 이는 환경 보호는 물론, 장기적으로 경제적인 이점도 제공합니다."
     },
     {
         "id": 3,
         "title":"HYDRO SYSTEM",
-        "image":"/image_data/manufacturing_card/bolt.jpeg",
+        "image":"/image_data/main_slider/slider3.png",
         "description":"한성 모듈러의 하이드로 시스템은 물 사용과 관리를 혁신적으로 개선합니다. 이 시스템은 빗물 수집 및 재활용, 스마트 물 관리 시스템을 통해 지속 가능한 물 자원 사용을 가능하게 합니다. 또한, 첨단 여과 기술을 이용해 수질을 개선하고, 실내외 수영장 및 정원 관수 시스템에 이르기까지 다양한 용도로 활용됩니다. 한성 모듈러의 하이드로 시스템은 자연 자원을 존중하며, 미래 세대를 위한 지속 가능한 환경을 구축하는 데 기여합니다."
     }
 ]
