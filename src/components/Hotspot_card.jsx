@@ -1,12 +1,12 @@
 import React from 'react';
+import './hotspot_card.css';
 
 
-
-export const Hotspot_card = ({title, image, description}) => {
+export const Hotspot_card = ({title, image, description, onBackClick}) => {
   return (
 
     <div style={styles.cardContainer}>
-      <div style={styles.backButton} >
+      <div className="back-button" style={styles.backButton} onClick={onBackClick}>
         ← back
       </div>
       <div style={{ ...styles.imageContainer, backgroundImage: `url(${image})`}}>
@@ -23,18 +23,18 @@ export const Hotspot_card = ({title, image, description}) => {
   // Styles
   const styles = {
     cardContainer: {
+      position: 'absolute',
       width: '300px',
       borderRadius: '25px',
       overflow: 'hidden',
       boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-      position: 'relative',
+      zIndex: 10,
     },
     backButton: {
       position: 'absolute',
       top: '10px',
       left: '10px',
       zIndex: 2,
-      backgroundColor: '#ffffffa0',
       padding: '5px 10px',
       borderRadius: '15px',
       cursor: 'pointer',

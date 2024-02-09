@@ -1,5 +1,6 @@
 .tech_page{
     height: 90vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,7 +20,8 @@
 }
 
 .tech_container{
-    display: flex;
+    display: block;
+    flex-wrap: wrap;
     flex-direction: row;
     height: 70%;
     justify-content: center;
@@ -30,55 +32,45 @@
 .tech_image{
     width: auto;
     height: 100%;
-    object-fit: contain;
-    position: relative;
+    display: block;
     z-index: 2;
 }
 
-.image-wrapper {
-    position: relative;
-    height: 100%;
-}
 
-
-
-.image-wrapper button{
+.tech_container button{
     background-color:var(--deep-yellow);
+    position: absolute;
     padding: 3px;
     border-radius: 50%;
-    z-index: 10;
+    z-index: 3;
 }
 
-.image-wrapper button:hover{
+.tech_container button:hover{
     background-color: rgb(125, 180, 125);
 }
 
 .hotspot-position-1{
-    position: absolute;
-    right: 17.5%;
-    top: 32.2%;
+    top: 32.4%;
+    right: 17.4%;
     width: 2.2rem;
     height: 2.2rem;
 }
 .hotspot-position-2{
-    position: absolute;
-    right: 7%;
     top: 41.4%;
+    right: 7.4%;
     width: 3.3rem;
     height: 3.3rem;
 }
 .hotspot-position-3{
-    position: absolute;
+    top: 58.6%;
     right: 17.8%;
-    bottom: 36.4%;
     width: 2rem;
     height: 2rem;
 }
 
-.hotspot-card{
-    position: absolute;
+.tech_page .hotspot-card{
     z-index: 100;
- 
+    top: 0;
 }
 
 
