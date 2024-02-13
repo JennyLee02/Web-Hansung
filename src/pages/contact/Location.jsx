@@ -1,7 +1,9 @@
 import React from 'react';
 import './location.css';
+import { useTranslation } from 'react-i18next';
 
 export const Location = () => {
+    const {t} = useTranslation();
   return (
     <div className='location-container'>
         <div className='location-content'>
@@ -19,7 +21,7 @@ export const Location = () => {
                     ></iframe>
                 </div>
                 <div className='location-text'>
-                    <p>Address: 경기도 파주시 문산읍 돈유2로 50 (선유리 1378)</p>
+                    <p>{t('Contact.address')}</p>
                     <p>Tel: 031-866-2335</p>
                     <p>email: hasmodular@daum.net</p>
                 </div>
@@ -30,5 +32,3 @@ export const Location = () => {
   )
 }
 
-
-// AIzaSyBfHZpRoMUmiLrvqYMaH2XvrYFES1hqlgs
