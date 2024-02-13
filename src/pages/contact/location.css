@@ -1,0 +1,49 @@
+.location-container{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.location-container h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.location-map{
+    padding-top: 3rem;
+}
+
+.location-text p{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.location-info{
+    position: relative;
+}
+
+.location-text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    line-height: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.divider{
+    border: 0.5px solid rgb(177, 177, 177);
+    margin-top: 5.5rem;
+}

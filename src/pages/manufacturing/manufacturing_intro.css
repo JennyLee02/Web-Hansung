@@ -44,7 +44,6 @@ h2{
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* margin-top: 7vh; */
     gap: 3rem;
 }
 
@@ -52,7 +51,7 @@ h2{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 7vh;
+    margin-top: 2vh;
     gap:3rem;
 }
 

@@ -8,7 +8,7 @@ export const Manufacturing_cards = () => {
     const {t, i18n} = useTranslation();
   return (
     <div className='MCard-page'>
-        <div className='MPage-title'>MODULAR METHOD</div>
+        <h2 className='MPage-title'>MODULAR METHOD</h2>
         <div className='Mcard-container'>
             {M_Data.map((card)=>(
                 <M_card
