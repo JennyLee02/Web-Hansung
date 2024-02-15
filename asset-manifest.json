@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Web-Hansung/static/css/main.b5d92cb7.css",
+    "main.js": "/Web-Hansung/static/js/main.191fdb0f.js",
+    "static/media/tech_hotspot_cr.png": "/Web-Hansung/static/media/tech_hotspot_cr.54aecbc5a7524849b9c4.png",
+    "static/media/intro2.png": "/Web-Hansung/static/media/intro2.1dfe46a6a7676fbc2dc1.png",
+    "static/media/TeamPhoto.jpg": "/Web-Hansung/static/media/TeamPhoto.4313351f3db55834f38d.jpg",
+    "static/media/intro1.png": "/Web-Hansung/static/media/intro1.56f9f674b794056695d8.png",
+    "static/media/HomeLogo.png": "/Web-Hansung/static/media/HomeLogo.4b7845796c3be7d3adb2.png",
+    "static/media/logo.svg": "/Web-Hansung/static/media/logo.7a5c2152b03f470c6642c28fd8f78a90.svg",
+    "index.html": "/Web-Hansung/index.html",
+    "static/media/getFetch.cjs": "/Web-Hansung/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.b5d92cb7.css.map": "/Web-Hansung/static/css/main.b5d92cb7.css.map",
+    "main.191fdb0f.js.map": "/Web-Hansung/static/js/main.191fdb0f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5d92cb7.css",
+    "static/js/main.191fdb0f.js"
+  ]
+}
