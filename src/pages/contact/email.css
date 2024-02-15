@@ -1,3 +1,7 @@
+.contact-us{
+    position: relative;
+}
+
 form {
     display: flex;
     align-items: flex-start;
@@ -54,15 +58,18 @@ input[type="submit"] {
 }
 
 .email-widget{
-    margin-left: 40%;
-    margin-bottom: 10%;
-    width: 420px;
-    height: 440px;
+    position: fixed;
+    left: 88%;
+    top: 73%;
+    transform: translate(-50%, -50%);
+    width: 20vw;
+    height: 45vh;
     font-weight: 600;
     color: white;
     background-color: rgb(21, 21, 21);
     padding: 1rem;
     border-radius: 10px;
+    animation: expandEmailWidget 0.5s ease forwards;
 }
 
 .submit-btn:hover{
@@ -80,6 +87,7 @@ h4{
 
 .heading{
     padding-bottom: 0.5rem;
+    color: white;
 }
 
 .exit{
@@ -89,10 +97,51 @@ h4{
     position: absolute;
     top: 0;
     right: 0;
+}
 
+.exit:hover{
+    color: grey;
 }
 
 .toggle-btn {
     font-size: 3rem;
-    color: black;
+    color: var(--deep-yellow);
+    position: fixed;
+    right: 1vw;
+    bottom: 2vh;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent; /* Semi-transparent black */
+}
+
+@keyframes expandEmailWidget {
+    from {
+        /* Start from the toggle button position */
+        opacity: 0;
+        transform: translate(1vw, 2vh) scale(0.1); /* Adjust these values based on your toggle button's position */
+    }
+    to {
+        /* End at the widget's final position */
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes collapseEmailWidget {
+    from {
+        /* Start from the widget's full size and position */
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    to {
+        /* Collapse back to the toggle button position */
+        opacity: 0;
+        transform: translate(1vw, 2vh) scale(0.1); /* Adjust based on your toggle button's position */
+    }
 }
