@@ -11,14 +11,12 @@ export const Email = () => {
     }
 
     const handleClosing = () => {
-        // Assuming your widget has a reference or can be selected
         const widget = document.querySelector('.email-widget');
         if (widget) {
             widget.style.animation = 'collapseEmailWidget 0.5s ease forwards';
-            // Set a timeout matching your animation duration before closing
             setTimeout(() => {
                 setExpandContact(false);
-            }, 500); // This duration should match your animation duration
+            }, 500); 
         }
     };
 
@@ -74,3 +72,5 @@ export const Email = () => {
     
   )
 }
+
+// To-do: EmailJS 구현하기

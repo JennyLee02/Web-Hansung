@@ -24,6 +24,13 @@
     padding-top: 3rem;
 }
 
+.location-map iframe {
+    width: 100%; /* Make iframe width responsive */
+    width: 50vw; /* Optional: limit the maximum width */
+    height: 50vh; /* Adjust based on your preference */
+    border: 0;
+}
+
 .location-text p{
     font-size: 18px;
     font-weight: 400;
@@ -46,4 +53,42 @@
 .divider{
     border: 0.5px solid rgb(177, 177, 177);
     margin-top: 5.5rem;
+}
+
+@media (max-width: 768px) {
+    .location-map iframe {
+        width: 80vw;
+        height: 40vh; /* Adjust height on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .location-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .location-text {
+        position: relative; /* Reset positioning for smaller screens */
+        align-items: center;
+        text-align: center; /* Center the text for smaller screens */
+        padding: 1rem; /* Add some padding around the text */
+    }
+}
+
+@media (max-width: 768px) {
+    .location-container h2, .location-text p {
+        font-size: 16px; /* Slightly reduce font size */
+    }
+
+    .divider {
+        margin-top: 2rem; /* Adjust divider spacing */
+    }
+}
+
+@media (max-width: 768px) {
+    .location-container {
+        height: auto; /* Allow the container to grow as needed */
+        padding: 2rem 1rem; /* Add some padding for smaller screens */
+    }
 }
