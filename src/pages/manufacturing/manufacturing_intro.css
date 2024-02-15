@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
+
 }
 
 .offsite_description{
@@ -33,10 +34,12 @@ h2{
 
 .offsite_image{
     width: 40vw;
+    height: 40vh;
 }
 
 .onsite_image{
     width: 40vw;
+    height: 40vh;
     margin-left: 4vw;
 }
 
@@ -45,6 +48,7 @@ h2{
     flex-direction: row;
     align-items: center;
     gap: 3rem;
+    position: relative;
 }
 
 .onsite_content{
@@ -53,11 +57,13 @@ h2{
     align-items: center;
     margin-top: 2vh;
     gap:3rem;
+    position: relative;
 }
 
 .onsite_text{
     display: flex;
     flex-direction: column;
+    /* text-align: right; */
 }
 .offsite_text{
     display: flex;
