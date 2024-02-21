@@ -7,8 +7,8 @@ import Products from './pages/products/Products';
 import Projects from './pages/projects/Projects';
 import Gallery from './pages/gallery/gallery';
 import Navbar from './components/Navbar';
-import { Kanane } from './pages/projects/kanane/Kanane';
-import { Cabin } from './pages/projects/cabin/Cabin';
+import { Kanane } from './pages/products/kanane/Kanane';
+import { Cabin } from './pages/products/cabin/Cabin';
 import './i18next';
 
 const App = () => {

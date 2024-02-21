@@ -1,4 +1,5 @@
 import './projects.css';
+import useFetch from '../../hooks/useFetch';
 import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
