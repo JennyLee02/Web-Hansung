@@ -29,6 +29,10 @@
     "description": {
       "type": "blocks",
       "required": true
+    },
+    "preview": {
+      "type": "string",
+      "required": true
     }
   }
 }
