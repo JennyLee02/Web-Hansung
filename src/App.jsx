@@ -7,6 +7,7 @@ import Products from './pages/products/Products';
 import Projects from './pages/projects/Projects';
 import Gallery from './pages/gallery/gallery';
 import Navbar from './components/Navbar';
+import { Post } from './pages/projects/Post';
 import { Kanane } from './pages/products/kanane/Kanane';
 import { Cabin } from './pages/products/cabin/Cabin';
 import './i18next';
@@ -24,6 +25,7 @@ const App = () => {
           <Route path='contact' element={<Contact/>}/>
           <Route path='kanane' element={<Kanane/>}/>
           <Route path='cabin' element={<Cabin/>}/>
+          <Route path='/details/:id' element={<Post/>}/>
         </Routes>
     </BrowserRouter>
   )

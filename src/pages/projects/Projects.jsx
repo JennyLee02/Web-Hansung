@@ -7,7 +7,7 @@ const Projects = () => {
   const {t, i18n} = useTranslation();
 
   //useFetch
-  const {loading, error, data} = useFetch('http://localhost:1337/api/projects')
+  const {loading, error, data} = useFetch('http://localhost:1337/api/projects?populate=*')
 
   // change this to proper loading and error msg later
   if (loading) return <p>Loaindg...</p>;
@@ -18,7 +18,13 @@ const Projects = () => {
     <div>
       {data && data.data && data.data.map((project) => (
         <div key={project.id} className='project-card'>
-          <h2 className='title'>{project.attributes.title}</h2>
+        {/* <img
+            src={`http://localhost:1337${project.attributes.image.data.attributes.url}`} 
+            alt={project.attributes.title} 
+            className='thumbnail'
+        /> */}
+      
+          <p className='title'>{project.attributes.title}</p>
           <p className='preview'>{project.attributes.preview}</p>
           <Link to={`/details/${project.id}`}>Read More</Link>
         </div>
