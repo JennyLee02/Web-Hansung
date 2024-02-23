@@ -18,11 +18,13 @@ const Projects = () => {
     <div>
       {data && data.data && data.data.map((project) => (
         <div key={project.id} className='project-card'>
-        {/* <img
-            src={`http://localhost:1337${project.attributes.image.data.attributes.url}`} 
-            alt={project.attributes.title} 
-            className='thumbnail'
-        /> */}
+          {project.attributes.image.data.length > 0 && (
+            <img
+              src={`http://localhost:1337${project.attributes.image.data[0].attributes.formats.small.url}`} 
+              alt={project.attributes.title}
+              className='project-image'
+            />
+          )}
       
           <p className='title'>{project.attributes.title}</p>
           <p className='preview'>{project.attributes.preview}</p>
