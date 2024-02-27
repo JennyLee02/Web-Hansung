@@ -1,0 +1,97 @@
+.project-page h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.project-page{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+  
+  .project-card {
+    position: relative;
+    width: 370px; 
+    height: 250px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out; /* Smooth scaling on hover */
+    color: white; 
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+  }
+  
+
+  .project-image {
+    height: 100%;
+    display: block; /* Remove any space below the image */
+  }
+  
+  .project-image-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* Height of the gradient effect */
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)); /* Gradient from transparent to dark */
+  }
+  
+  /* Info section styling */
+  .project-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0); /* Fully transparent background */
+  }
+  
+  /* Meta information styling */
+  .project-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    opacity: 0.85;
+  }
+  
+  /* Title styling */
+  .title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 10px; /* Spacing from the meta information */
+  }
+  
+  /* Preview text styling */
+  .preview {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 5px; /* Spacing from the title */
+  }
+  
+  /* 'Read More' link styling */
+  .project-card a {
+    display: inline-block;
+    text-align: right;
+    margin-top: 10px;
+    color: #4e9af1; 
+    font-weight: bold;
+    text-decoration: none; /* No underline */
+  }
+  
+  .project-card a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+  }
+  

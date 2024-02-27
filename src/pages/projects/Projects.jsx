@@ -13,25 +13,44 @@ const Projects = () => {
   if (loading) return <p>Loaindg...</p>;
   if (error) return <p>Error: {error.message || 'An unknown error occurred'}</p>;
 
-  console.log(data)
   return (
-    <div>
-      {data && data.data && data.data.map((project) => (
-        <div key={project.id} className='project-card'>
-          {project.attributes.image.data.length > 0 && (
-            <img
-              src={`http://localhost:1337${project.attributes.image.data[0].attributes.formats.small.url}`} 
-              alt={project.attributes.title}
-              className='project-image'
-            />
-          )}
-      
-          <p className='title'>{project.attributes.title}</p>
-          <p className='preview'>{project.attributes.preview}</p>
-          <Link to={`/details/${project.id}`}>Read More</Link>
+    <div className='project-page'>
+      <h2>PROJECTS</h2>
+        <div className='project-container'>
+          {data && data.data && data.data.map((project) => {
+            const formattedDate = new Date(project.attributes.createdAt).toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: 'numeric',
+              day: 'numeric',
+            });
+            
+            return(
+                <div key={project.id} className='project-card'>
+                  {project.attributes.image.data.length > 0 && (
+                    <div className='project-image-container'>
+                      <img
+                        src={`http://localhost:1337${project.attributes.image.data[0].attributes.formats.small.url}`} 
+                        alt={project.attributes.title}
+                        className='project-image'
+                      />
+                    </div>
+                    
+                  )}
+                  <div className='project-info'>
+                    <div className='project-meta'>
+                      <span className="project-date">{formattedDate}</span>
+                    </div>
+                    <p className='title'>{project.attributes.title}</p>
+                    <p className='preview'>{project.attributes.preview}</p>
+                    {/* <Link to={`/details/${project.id}`}>Read More</Link> */}
+                  </div>
+                  
+                </div>
+
+          )
+          })}
         </div>
-      ))}
-    </div>
+      </div>
   )
 }
 
