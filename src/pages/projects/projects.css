@@ -2,10 +2,10 @@
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--text-color);
+    margin-top: 4.5rem;
 }
 
 .project-page{
-    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,6 +17,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
+    padding-top: 3rem;
+    margin-bottom: 6rem;
   }
   
   .project-card {

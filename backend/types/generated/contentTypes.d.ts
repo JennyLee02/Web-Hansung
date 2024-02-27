@@ -374,7 +374,7 @@ export interface ApiProjectProject extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    title: Attribute.String & Attribute.Required & Attribute.Unique;
+    title: Attribute.String & Attribute.Required;
     image: Attribute.Media & Attribute.Required;
     description: Attribute.Blocks & Attribute.Required;
     preview: Attribute.String & Attribute.Required;

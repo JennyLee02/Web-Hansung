@@ -25,7 +25,7 @@ const Projects = () => {
             });
             
             return(
-                <div key={project.id} className='project-card'>
+                <Link to={`/details/${project.id}`} key={project.id} className='project-card'>
                   {project.attributes.image.data.length > 0 && (
                     <div className='project-image-container'>
                       <img
@@ -45,7 +45,7 @@ const Projects = () => {
                     {/* <Link to={`/details/${project.id}`}>Read More</Link> */}
                   </div>
                   
-                </div>
+                </Link>
 
           )
           })}
