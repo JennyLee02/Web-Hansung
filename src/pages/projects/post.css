@@ -1,0 +1,11 @@
+.post-title{
+    font-weight: 400;
+}
+
+.post-image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1020px;
+}

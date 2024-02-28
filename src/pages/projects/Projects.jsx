@@ -32,6 +32,7 @@ const Projects = () => {
     (currentPage + 1) * projectsPerPage
   ) : [];
 
+
   return (
     <div className='project-page'>
       <h2>PROJECTS</h2>
@@ -42,7 +43,6 @@ const Projects = () => {
               month: 'numeric',
               day: 'numeric',
             });
-            
             return(
                 <Link to={`/details/${project.id}`} key={project.id} className='project-card'>
                   {project.attributes.image.data.length > 0 && (
@@ -53,7 +53,6 @@ const Projects = () => {
                         className='project-image'
                       />
                     </div>
-                    
                   )}
                   <div className='project-info'>
                     <div className='project-meta'>
@@ -61,7 +60,6 @@ const Projects = () => {
                     </div>
                     <p className='title'>{project.attributes.title}</p>
                     <p className='preview'>{project.attributes.preview}</p>
-                    {/* <Link to={`/details/${project.id}`}>Read More</Link> */}
                   </div>
                   
                 </Link>
