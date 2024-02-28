@@ -1,5 +1,14 @@
+.project-detail-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .post-title{
     font-weight: 400;
+    padding-top: 1rem;
+    margin-top: 2rem;
 }
 
 .post-image-container{
@@ -8,4 +17,17 @@
     justify-content: center;
     flex-direction: column;
     width: 1020px;
+}
+
+.sub-title{
+    font-weight: 400;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+}
+
+.description{
+    font-size: 1rem;
+    font-weight: 400;
+    width: 1020px;
+    padding-top: 1rem;
 }
