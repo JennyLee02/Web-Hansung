@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import useFetch from '../../hooks/useFetch';
+import {Link} from 'react-router-dom';
 import "./post.css";
 
 export const Post = () => {
@@ -26,7 +27,10 @@ export const Post = () => {
 
   return (
     <div className="project-detail-page">
-        <h2 className='post-title'>{data.data.attributes.title}</h2>
+        <div className=''>
+            <Link to={'/projects'} className='back-btn'>← back</Link>
+            <h2 className='post-title'>{data.data.attributes.title}</h2>
+        </div>
         <p className='sub-title'>{data.data.attributes.preview}</p>
         <div className='post-image-container'>
             <img
