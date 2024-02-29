@@ -26,13 +26,18 @@
         "videos"
       ]
     },
-    "description": {
-      "type": "blocks",
-      "required": true
-    },
     "preview": {
       "type": "string",
       "required": true
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "standard"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }

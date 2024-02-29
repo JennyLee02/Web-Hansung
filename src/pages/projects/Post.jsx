@@ -11,24 +11,13 @@ export const Post = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
 
-  const renderDescription = (descriptionArray) => {
-    return descriptionArray.map((item, index) => (
-      <p key={index}>
-        {item.children.map((child, childIndex) => (
-          // Directly display the text content of each child
-          <React.Fragment key={childIndex}>{child.text}</React.Fragment>
-        ))}
-      </p>
-    ));
-  };
-
-  const descriptionContent = data?.data?.attributes?.description;
+  const description = data.data.attributes.description;
 
 
   return (
     <div className="project-detail-page">
-        <div className=''>
-            <Link to={'/projects'} className='back-btn'>← back</Link>
+        <div className='post-header'>
+            <Link to={'/projects'} className='back-btn'>← BACK</Link>
             <h2 className='post-title'>{data.data.attributes.title}</h2>
         </div>
         <p className='sub-title'>{data.data.attributes.preview}</p>
@@ -40,7 +29,7 @@ export const Post = () => {
             />
         </div>
         <div className='description'>
-          {descriptionContent && renderDescription(descriptionContent)}
+            <div className='description' dangerouslySetInnerHTML={{ __html: description }} />
         </div>
 
 
