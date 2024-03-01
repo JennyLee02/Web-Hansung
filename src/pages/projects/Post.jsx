@@ -1,10 +1,13 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import useFetch from '../../hooks/useFetch';
 import {Link} from 'react-router-dom';
 import "./post.css";
 
 export const Post = () => {
+    const navigate = useNavigate();
+  const location = useLocation();
+
   const { id } = useParams();
   const { loading, error, data } = useFetch(`http://localhost:1337/api/projects/${id}?populate=*`);
 
@@ -13,11 +16,14 @@ export const Post = () => {
 
   const description = data.data.attributes.description;
 
+  const handleBack = () => {
+    navigate('/projects', {state: {retainState: location.state?.fromProjects}});
+  };
 
   return (
     <div className="project-detail-page">
         <div className='post-header'>
-            <Link to={'/projects'} className='back-btn'>← BACK</Link>
+            <button onClick={handleBack} className='back-btn'>← BACK</button>
             <h2 className='post-title'>{data.data.attributes.title}</h2>
         </div>
         <p className='sub-title'>{data.data.attributes.preview}</p>

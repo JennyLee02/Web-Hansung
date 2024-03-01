@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom';
 import './projects.css'; 
 
 const Projects = () => {
-  const [currentPage, setCurrentPage] = useState(parseInt(localStorage.getItem('currentPage')) || 1);
+  const [currentPage, setCurrentPage] = useState(() => {
+    const navFromPost = sessionStorage.getItem('navigatedFrom') === 'Projects';
+    sessionStorage.removeItem('navigatedFrom'); // Clear after checking
+    return navFromPost ? parseInt(localStorage.getItem('currentPage')) || 1 : 1;
+  });
   const [limit, setLimit] = useState(parseInt(localStorage.getItem('limit')) || 35); // Default limit
   const [projects, setProjects] = useState([]);
   const [pageCount, setPageCount] = useState(0);
@@ -15,17 +19,15 @@ const Projects = () => {
 
       setProjects(data.data);
       setPageCount(data.meta.pagination.pageCount); // Update total page count based on response
+      
+      // Update localStorage after fetching
+      localStorage.setItem('currentPage', currentPage.toString());
+      localStorage.setItem('limit', limit.toString());
     };
 
     fetchProjects();
   }, [currentPage, limit]); // Re-fetch data when currentPage or limit changes
 
-
-  // Update localStorage whenever currentPage or limit changes
-  useEffect(() => {
-    localStorage.setItem('currentPage', currentPage);
-    localStorage.setItem('limit', limit);
-  }, [currentPage, limit]);
 
   // Function to navigate to the next page
   const goToNextPage = () => {
@@ -43,6 +45,22 @@ const Projects = () => {
     setCurrentPage(1); // Reset to first page with new limit
   };
 
+  const renderPageNumbers = () => {
+    let pages = [];
+    for(let i=1; i<= pageCount; i++){
+      pages.push(
+        <button
+          key={i}
+          onClick={() => setCurrentPage(i)}
+          className={currentPage === i ? 'active' : ''}  
+        >
+          {i}
+        </button>
+      );
+    }
+    return pages;
+  };
+
   return (
     <div className="project-page">
       <h2>PROJECTS</h2>
@@ -54,7 +72,12 @@ const Projects = () => {
       </select>
       <div className="project-container">
         {projects.map((project) => (
-          <Link to={`/details/${project.id}`} key={project.id} className="project-card">
+          <Link 
+            to={`/details/${project.id}`} 
+            key={project.id} 
+            className="project-card"
+            onClick={() => sessionStorage.setItem('navigatedFrom', 'Projects')}
+            >
             {project.attributes.image.data.length > 0 && (
               <div className="project-image-container">
                 <img
@@ -75,6 +98,7 @@ const Projects = () => {
         <button onClick={goToPreviousPage} disabled={currentPage === 1}>
           Previous
         </button>
+        {renderPageNumbers()}
         Page {currentPage} of {pageCount}
         <button onClick={goToNextPage} disabled={currentPage === pageCount}>
           Next
