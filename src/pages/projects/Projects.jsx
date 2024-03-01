@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './projects.css'; // Make sure the path is correct for your CSS file
+import './projects.css'; 
 
 const Projects = () => {
   const [currentPage, setCurrentPage] = useState(1);
