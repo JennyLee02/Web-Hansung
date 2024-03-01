@@ -10,8 +10,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
+.page-count{
+  font-weight: 400;
+  position: absolute;
+  top: 10rem;
+  left: 16rem;
+}
 
 .project-container {
     display: grid;
@@ -98,53 +105,28 @@
   }
   
 
-    /* PAGINATION STYLING */
+  /* PAGINATION STYLING */
 
   /* Pagination container */
 .pagination {
     display: flex;
     list-style-type: none;
     justify-content: center;
-    padding: 0;
-    margin-top: 20px; /* Add space above the pagination */
+    position: absolute;
+    bottom: 2rem;
+  }
+
+  .pagination-number{
+    display: flex;
+    gap: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .page-active{
+    font-weight: 600;
+    color: var(--text-color);
   }
   
-  /* Pagination items */
-  .pagination li {
-    margin: 0 5px;
-  }
-  
-  /* Pagination links */
-  .pagination li a {
-    text-decoration: none;
-    padding: 8px 16px;
-    background-color: #f4f4f4;
-    color: #333;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    cursor: pointer;
-  }
-  
-  /* Hover state for pagination links */
-  .pagination li a:hover {
-    background-color: #e9e9e9;
-  }
-  
-  /* Active page number */
-  .pagination li .active {
-    background-color: #007bff;
-    color: white;
-    border-color: #007bff;
-  }
-  
-  /* Disabled links */
-  .pagination__link--disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-  }
-  
-  /* Break label */
-  .break-me {
-    cursor: default;
-  }
+ 
   

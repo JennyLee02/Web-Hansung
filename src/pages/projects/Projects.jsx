@@ -52,7 +52,7 @@ const Projects = () => {
         <button
           key={i}
           onClick={() => setCurrentPage(i)}
-          className={currentPage === i ? 'active' : ''}  
+          className={currentPage === i ? 'page-active' : ''}  
         >
           {i}
         </button>
@@ -64,6 +64,7 @@ const Projects = () => {
   return (
     <div className="project-page">
       <h2>PROJECTS</h2>
+      <div className='page-count'>Page {currentPage} of {pageCount}</div>
       <select onChange={handleLimitChange} value={limit}>
         <option value="10">10</option>
         <option value="20">20</option>
@@ -98,8 +99,7 @@ const Projects = () => {
         <button onClick={goToPreviousPage} disabled={currentPage === 1}>
           Previous
         </button>
-        {renderPageNumbers()}
-        Page {currentPage} of {pageCount}
+        <div className='pagination-number'>{renderPageNumbers()}</div>
         <button onClick={goToNextPage} disabled={currentPage === pageCount}>
           Next
         </button>
