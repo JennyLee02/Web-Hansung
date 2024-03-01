@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import './projects.css'; 
 
 const Projects = () => {
-  const [currentPage, setCurrentPage] = useState(1);
-  const [limit, setLimit] = useState(35); // Default limit
+  const [currentPage, setCurrentPage] = useState(parseInt(localStorage.getItem('currentPage')) || 1);
+  const [limit, setLimit] = useState(parseInt(localStorage.getItem('limit')) || 35); // Default limit
   const [projects, setProjects] = useState([]);
   const [pageCount, setPageCount] = useState(0);
 
@@ -20,6 +20,13 @@ const Projects = () => {
     fetchProjects();
   }, [currentPage, limit]); // Re-fetch data when currentPage or limit changes
 
+
+  // Update localStorage whenever currentPage or limit changes
+  useEffect(() => {
+    localStorage.setItem('currentPage', currentPage);
+    localStorage.setItem('limit', limit);
+  }, [currentPage, limit]);
+
   // Function to navigate to the next page
   const goToNextPage = () => {
     setCurrentPage((prevPage) => Math.min(prevPage + 1, pageCount));
@@ -32,7 +39,7 @@ const Projects = () => {
 
   // Function to handle limit change
   const handleLimitChange = (e) => {
-    setLimit(e.target.value);
+    setLimit(parseInt(e.target.value));
     setCurrentPage(1); // Reset to first page with new limit
   };
 
