@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 const Gallery = () => {
   const {t, i18n} = useTranslation();
 
-  const fetchUrl = 'http://localhost:1337/api/user-guides?populate=*'
+  const fetchUrl = 'http://localhost:1337/api/user-guides?populate=*';
   const {data, loading, error} = useFetch(fetchUrl);
 
   const pdfFiles = data?.data;
