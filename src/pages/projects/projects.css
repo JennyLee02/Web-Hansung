@@ -13,11 +13,16 @@
     position: relative;
 }
 
-.page-count{
+
+.page-limit{
   font-weight: 400;
   position: absolute;
-  top: 10rem;
+  top: 8.5rem;
   left: 16rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
 }
 
 .project-container {
@@ -127,6 +132,7 @@
     font-weight: 600;
     color: var(--text-color);
   }
-  
+
+
  
   

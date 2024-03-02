@@ -59,16 +59,21 @@ const Projects = () => {
     return pages;
   };
 
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error loading PDF files: {error.message}</p>;
+
   return (
     <div className="project-page">
       <h2>PROJECTS</h2>
-      <div className='page-count'>Page {currentPage} of {pageCount}</div>
-      <select onChange={handleLimitChange} value={limit}>
-        <option value="15">15</option>
-        <option value="30">30</option>
-        <option value="45">45</option>
-        <option value="60">60</option>
-      </select>
+      <div className='page-limit'>
+        <div>Page {currentPage} of {pageCount}</div>
+        <select  className='limit-change' onChange={handleLimitChange} value={limit}>
+          <option value="15">15</option>
+          <option value="30">30</option>
+          <option value="45">45</option>
+          <option value="60">60</option>
+        </select>
+      </div>
       <div className="project-container">
         {projects.map((project) => (
           <Link 
