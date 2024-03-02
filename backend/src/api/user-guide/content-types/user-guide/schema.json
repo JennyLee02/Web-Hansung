@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_guides",
+  "info": {
+    "singularName": "user-guide",
+    "pluralName": "user-guides",
+    "displayName": "User_guide",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "guidebook": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    }
+  }
+}
