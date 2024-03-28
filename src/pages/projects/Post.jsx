@@ -34,8 +34,47 @@ export const Post = () => {
                 className='post-image'
             />
         </div>
-        <div className='description'>
+        {/* <div className='description'>
             <div className='description' dangerouslySetInnerHTML={{ __html: description }} />
+        </div> */}
+
+        <div className='details'>
+            <div className='name'>
+              <span className='detail_title three-letter'>현 장 명</span>
+              <span className='detail_data'>{data.data.attributes.name}</span>
+            </div>
+            <div className='location'>
+              <span className='detail_title two-letter'>위 치</span>
+              <span className='detail_data'>{data.data.attributes.location}</span>
+            </div>
+            <div className='purpose'>
+              <span className='detail_title two-letter'>용 도</span>
+              <span className='detail_data'> {data.data.attributes.purpose}</span>
+            </div>
+            <div className='land_area'>
+              <span className='detail_title'>대지면적</span>
+              <span className='detail_data'>{data.data.attributes.land_area}</span>
+            </div>
+            <div className='building_area'>
+              <span className='detail_title'>건축면적</span>
+              <span className='detail_data'> {data.data.attributes.building_area}</span>
+            </div>
+            <div className='scale'>
+              <span className='detail_title two-letter'>규 모</span>
+              <span className='detail_data'>{data.data.attributes.scale}</span>
+            </div>
+            <div className='structure'>
+              <span className='detail_title two-letter'>구 조</span>
+              <span className='detail_data'>{data.data.attributes.structure}</span>
+            </div>
+            <div className='finisher'>
+              <span className='detail_title'>외부마감</span>
+              <span className='detail_data'>{data.data.attributes.finisher}</span>
+            </div>
+            <div className='designer'>
+              <span className='detail_title two-letter'>설 계</span>
+              <span className='detail_data'>{data.data.attributes.designed_by}</span>
+            </div>
         </div>
 
 

@@ -386,6 +386,15 @@ export interface ApiProjectProject extends Schema.CollectionType {
           preset: 'standard';
         }
       >;
+    name: Attribute.String;
+    location: Attribute.String;
+    purpose: Attribute.String;
+    land_area: Attribute.String;
+    building_area: Attribute.String;
+    scale: Attribute.String;
+    structure: Attribute.String;
+    finisher: Attribute.String;
+    designed_by: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

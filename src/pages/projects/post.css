@@ -1,51 +1,90 @@
-.project-detail-page{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+
+.project-detail-page {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    max-width: 800px; 
+    margin: 40px auto; 
+    position: relative;
 }
 
 .post-title{
     font-weight: 400;
     font-size: 36px;
     padding-top: 1rem;
-    margin-top: 4rem;
-}
-
-.post-image-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 1020px;
+    text-align: center;
 }
 
 .sub-title{
     font-weight: 400;
     padding-top: 0.5rem;
     padding-bottom: 2rem;
+    text-align: center;
 }
 
-.description{
-    font-size: 1rem;
-    font-weight: 400;
-    width: 1020px;
-    padding-top: 1rem;
-    padding-bottom: 5rem;
+.post-header,
+.post-image-container{
+    width: 100%; 
 }
 
-.post-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 60vw;
-    position: relative;
+.post-image-container img {
+    max-width: 100%; 
+    height: auto;
 }
 
-.back-btn{
+.back-btn {
     font-weight: 400;
     display: flex;
     position: absolute;
-    left: 0;
-    top: 85px;
+    left: 20px; 
+    top: 90px; 
+    z-index: 10; 
+    border-radius: 5px;
+    color: #333; 
+    padding: 2px 3px; 
+    text-decoration: none;
+    border: none; 
+    cursor: pointer; 
+}
+
+/* Add a hover effect for better user experience */
+.back-btn:hover {
+    background-color: #e2e2e2;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: auto auto; 
+    gap: 8px; 
+    margin-top: 20px; 
+    align-items: center; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.detail_title {
+    font-weight: 600;
+    text-align: right; 
+    padding-right: 5px;
+    padding-left: 5px; 
+    
+    background-color: #f9f9f9; 
+    border: 1px solid #eaeaea; 
+}
+
+.detail_data {
+    text-align: left; 
+    padding-left: 10px; 
+    font-weight: 400;
+    padding: 5px 10px; 
+}
+
+.three-letter{
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.two-letter{
+    padding-left: 16px;
+    padding-right: 16px;
 }

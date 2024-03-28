@@ -38,6 +38,33 @@
       },
       "required": true,
       "customField": "plugin::ckeditor.CKEditor"
+    },
+    "name": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "land_area": {
+      "type": "string"
+    },
+    "building_area": {
+      "type": "string"
+    },
+    "scale": {
+      "type": "string"
+    },
+    "structure": {
+      "type": "string"
+    },
+    "finisher": {
+      "type": "string"
+    },
+    "designed_by": {
+      "type": "string"
     }
   }
 }
