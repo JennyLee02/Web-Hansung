@@ -377,15 +377,6 @@ export interface ApiProjectProject extends Schema.CollectionType {
     title: Attribute.String & Attribute.Required;
     image: Attribute.Media & Attribute.Required;
     preview: Attribute.String & Attribute.Required;
-    description: Attribute.RichText &
-      Attribute.Required &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'standard';
-        }
-      >;
     name: Attribute.String;
     location: Attribute.String;
     purpose: Attribute.String;

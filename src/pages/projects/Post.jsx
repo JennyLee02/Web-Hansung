@@ -34,10 +34,7 @@ export const Post = () => {
                 className='post-image'
             />
         </div>
-        {/* <div className='description'>
-            <div className='description' dangerouslySetInnerHTML={{ __html: description }} />
-        </div> */}
-
+       
         <div className='details'>
             <div className='name'>
               <span className='detail_title three-letter'>현 장 명</span>
