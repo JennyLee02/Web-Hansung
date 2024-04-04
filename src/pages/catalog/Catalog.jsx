@@ -1,9 +1,9 @@
 import React from 'react';
 import useFetch from '../../hooks/useFetch';
-import './gallery.css';
+import './catalog.css';
 import { useTranslation } from 'react-i18next';
 
-const Gallery = () => {
+const Catalog = () => {
   const {t, i18n} = useTranslation();
 
   const fetchUrl = 'http://localhost:1337/api/user-guides?populate=*';
@@ -15,8 +15,8 @@ const Gallery = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error loading PDF files: {error.message}</p>;
   return (
-    <div className='gallery-page'>
-        <h2 className='gallery-title'>USER GUIDE</h2>
+    <div className='catalog-page'>
+        <h2 className='catalog-title'>USER GUIDE</h2>
         <div className='pdf-list'>
           {pdfFiles?.map((pdf, index) => {
             const pdfUrl = pdf.attributes.guidebook?.data?.attributes?.url;
@@ -37,4 +37,4 @@ const Gallery = () => {
   )
 }
 
-export default Gallery
+export default Catalog

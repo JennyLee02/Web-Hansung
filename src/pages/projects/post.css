@@ -29,7 +29,7 @@
 
 .post-image-container img {
     max-width: 100%; 
-    height: auto;
+    height: 50vh;
 }
 
 .back-btn {
@@ -45,6 +45,10 @@
     text-decoration: none;
     border: none; 
     cursor: pointer; 
+}
+
+.carousel-image-container{
+    max-height: 50vh;
 }
 
 /* Add a hover effect for better user experience */

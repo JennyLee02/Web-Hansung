@@ -16,8 +16,8 @@ export const links = [
         path: '/projects'
     },
     {
-        name: "GALLERY",
-        path: '/gallery'
+        name: "CATALOG",
+        path: '/catalog'
     },
     {
         name: "CONTACT",

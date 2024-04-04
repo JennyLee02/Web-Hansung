@@ -1,11 +1,11 @@
-.gallery-page{
+.catalog-page{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.gallery-title{
+.catalog-title{
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--text-color);
