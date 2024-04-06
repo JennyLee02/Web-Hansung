@@ -1,0 +1,30 @@
+.main-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    position: relative;
+  }
+  
+  .main-img {
+    max-width: 90vw;
+    max-height: 90vh;
+  }
+
+  .kanane-title{
+    position: absolute;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 4rem;
+    top: 30%;
+  }
+
+  .kanane-intro{
+    position: absolute;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    width: 700px;
+    top: 42%;
+  }
