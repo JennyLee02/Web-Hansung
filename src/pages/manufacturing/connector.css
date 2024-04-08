@@ -1,0 +1,54 @@
+.connector-container{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.connector-description{
+    font-weight: 400;
+    padding: 1rem;
+    margin-left: 4vw;
+    width: 35vw;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.connector-top{
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    align-items: center;
+    position: relative;
+}
+
+.connector-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70vw;
+    margin-top: 2vh;
+    position: relative;
+}
+
+.connector-title{
+    width: 40vw;
+    padding: 1rem;
+    margin-left: 4vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.connector-title h1{
+    font-size: 4.5rem;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.connector-image{
+    width: 25vw;
+    height: 35vh;
+}
+
+

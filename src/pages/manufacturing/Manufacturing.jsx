@@ -5,6 +5,7 @@ import { Footer } from '../../components/Footer';
 import { Manufacturing_intro } from './Manufacturing_intro';
 import { Manufacturing_cards } from './Manufacturing_cards';
 import { Tech_description } from './Tech_description';
+import Connector from './Connector';
 import DotIndicator from '../../components/DotIndicator';
 
 
@@ -15,6 +16,7 @@ const Manufacturing = () => {
   const section1 = useRef();
   const section2 = useRef();
   const section3 = useRef();
+  const section4 = useRef();
 
   function scrollTo(section, index) {
     section.current.scrollIntoView({behavior: "smooth"});
@@ -32,7 +34,7 @@ const Manufacturing = () => {
       });
     }, {threshold: 0.5});
   
-    [section1, section2, section3].forEach((section, index) => {
+    [section1, section2, section3, section4].forEach((section, index) => {
       if (section.current) {
         section.current.setAttribute('data-index', index);
         observer.observe(section.current);
@@ -40,7 +42,7 @@ const Manufacturing = () => {
     });
   
     return () => {
-      [section1, section2, section3].forEach((section) => {
+      [section1, section2, section3, section4].forEach((section) => {
         if (section.current) {
           observer.unobserve(section.current);
         }
@@ -63,13 +65,17 @@ const Manufacturing = () => {
         </div>
 
         <div ref={section3} data-index='2'>
+          <Connector/>
+        </div>
+
+        <div ref={section4} data-index='3'> 
           <Tech_description/>
         </div>
       </div>
 
 
       <div className='dot-indicators'>
-        {[section1, section2, section3].map((section, index) => (
+        {[section1, section2, section3, section4].map((section, index) => (
           <DotIndicator 
             key={index} 
             isActive={activeSection === index}

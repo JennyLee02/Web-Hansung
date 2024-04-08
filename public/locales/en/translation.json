@@ -22,6 +22,9 @@
                 "cost":"Reducing the construction period lowers building costs, making this an economically advantageous construction method.",
                 "service":"The modular production method allows for after-sales service, enhancing the construction technique's appeal."
             }
+        },
+        "connector":{
+            "description": "One of the most important elements in modular architecture is the structure of the joints. This is responsible for stability and constructability, which dictates the quality of the entire construction. The structure of the joints ensures that each part of the modular is smoothly connected and stably supported. Additionally, the higher the quality of the joints during construction, the more likely it is to adhere to the construction schedule and reduce costs. Therefore, securing the technological capabilities of the joint structures is very important in modular construction."
         }
     },
 
