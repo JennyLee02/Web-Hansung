@@ -9,9 +9,9 @@
     align-items: center;
   }
   
-  .mySwiper{
+  .TextSwiper{
     position: absolute;
-    top: 10%;
+    top: 10vh;
     justify-content: center;
     align-items: center;
   }
@@ -83,8 +83,28 @@
   }
   
   /* Override any other shadow or gradient styles that might be coming from elsewhere */
-  .mySwiper .swiper-slide-active,
-  .mySwiper .swiper-slide {
+  .TextSwiper .swiper-slide-active,
+  .TextSwiper .swiper-slide {
     box-shadow: none !important; /* Remove box shadow */
   }
   
+  .blueprint-image {
+    width: 100%; /* or any other dimensions you prefer */
+    height: auto;
+  }
+  
+  .blueprint-container {
+    text-align: center; /* Centers the image if it's not full-width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 50vh;
+    position: absolute;
+    top: 25%;
+  }
+  
+  .blueprint-container img{
+    height: 100%;
+    width: auto;
+  }

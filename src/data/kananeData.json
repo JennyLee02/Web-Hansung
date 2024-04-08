@@ -1,0 +1,7 @@
+[
+    {"name": "Extended", "blueprint": "/image_data/Kanane/extend.png"},
+    {"name": "Terrace1", "blueprint": "/image_data/Kanane/terrace.png"},
+    {"name": "Terrace2", "blueprint": "/image_data/Kanane/terrace2.png"},
+    {"name": "Two Room", "blueprint": "/image_data/Kanane/tworoom.png"},
+    {"name": "Master Room", "blueprint": "/image_data/Kanane/masterroom.png"}
+]
