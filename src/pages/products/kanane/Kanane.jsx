@@ -3,6 +3,10 @@ import "./kanane.css";
 import buildingView from '../../../images/Kanane/main_img.jpg';
 import splitStringUsingRegex from '../../../utils/splitStringUsingRegex';
 import {motion, variants} from "framer-motion";
+import Model_Interact from './Model_Interact';
+import Kanane_type from './Kanane_type';
+
+
 
 const charVariants= {
   hidden: {opacity: 0},
@@ -56,6 +60,14 @@ export const Kanane = () => {
             ))}
           </motion.p>
         )}
+      </div>
+
+      <div className='modelling_container'>
+          <Model_Interact/>
+      </div>
+
+      <div>
+        <Kanane_type/>
       </div>
     </div>
   )
