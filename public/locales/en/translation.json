@@ -25,6 +25,9 @@
         },
         "connector":{
             "description": "One of the most important elements in modular architecture is the structure of the joints. This is responsible for stability and constructability, which dictates the quality of the entire construction. The structure of the joints ensures that each part of the modular is smoothly connected and stably supported. Additionally, the higher the quality of the joints during construction, the more likely it is to adhere to the construction schedule and reduce costs. Therefore, securing the technological capabilities of the joint structures is very important in modular construction."
+        },
+        "hidefoot":{
+            "description":"The patent technology of 'HIDE-FOOT' supports from unseen places, raising the delivery completion rate up to 95%. This technology ensures seismic stability and helps to construct and install more safely and quickly. Through this, it is possible to maintain a cleaner appearance of the building while simultaneously increasing stability and construction efficiency."
         }
     },
 

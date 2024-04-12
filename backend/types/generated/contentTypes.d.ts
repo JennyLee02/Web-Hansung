@@ -418,6 +418,9 @@ export interface ApiUserGuideUserGuide extends Schema.CollectionType {
   attributes: {
     title: Attribute.String & Attribute.Required;
     guidebook: Attribute.Media & Attribute.Required;
+    Type: Attribute.Enumeration<
+      ['Temperature', 'Boiler', 'Water Heater', 'Etc']
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

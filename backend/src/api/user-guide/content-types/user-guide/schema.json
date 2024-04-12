@@ -23,6 +23,15 @@
       "allowedTypes": [
         "files"
       ]
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Temperature",
+        "Boiler",
+        "Water Heater",
+        "Etc"
+      ]
     }
   }
 }

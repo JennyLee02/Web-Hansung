@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import useFetch from '../../hooks/useFetch';
 import './catalog.css';
 import { useTranslation } from 'react-i18next';
@@ -11,16 +11,51 @@ const Catalog = () => {
 
   const pdfFiles = data?.data;
 
+  const CategoryKeys = {
+    Temperature: 'Temperature',
+    Boiler: 'Boiler',
+    WaterHeater: 'Water Heater',
+    Etc: 'Etc',
+  };
+
+  const CategoryDisplayNames = {
+    Temperature: '개별온도제어시스템',
+    Boiler: '보일러',
+    WaterHeater: '온수기',
+    Etc: '기타',
+  };
+
+  // State for category selection: set "Temperature" as default
+  const [selectedCategory, setSelectedCategory] = useState(CategoryKeys.Temperature);
+
+  const filteredPdfFiles = pdfFiles?.filter(
+    (pdf) => pdf.attributes.Type === selectedCategory
+  );
+
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error loading PDF files: {error.message}</p>;
+
   return (
     <div className='catalog-page'>
-        <h2 className='catalog-title'>USER GUIDE</h2>
+        <h2 className='catalog-title'>PRODUCT MANUAL</h2>
+
+        {/* Category buttons */}
+        <div className='category-buttons'>
+          {Object.entries(CategoryKeys).map(([key, value]) => (
+            <button
+              key={key}
+              className={`category-button ${selectedCategory === value ? 'active' : ''}`}
+              onClick={() => setSelectedCategory(value)}
+            >
+              {CategoryDisplayNames[key]}
+            </button>
+          ))}
+        </div>
+
         <div className='pdf-list'>
-          {pdfFiles?.map((pdf, index) => {
+          {filteredPdfFiles?.map((pdf, index) => {
             const pdfUrl = pdf.attributes.guidebook?.data?.attributes?.url;
-            console.log(pdfFiles);
             return (
               <div key={index} className='pdf-item'>
                 <p className='book-title'>{pdf.attributes.title}</p>

@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .catalog-title{
@@ -25,3 +26,26 @@
     flex-direction: row;
     gap: 2rem;
 }
+
+.category-buttons {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    left: 30vw;
+    top: 30vh;
+  }
+  
+  .category-button {
+    padding: 10px;
+    border: 1px solid #ccc; /* Style as per your design */
+    background-color: #f8f8f8; /* Style as per your design */
+  }
+  
+  .category-button.active {
+    border-color: #000; /* Style for active state */
+    background-color: #e0e0e0; /* Style for active state */
+  }
+  

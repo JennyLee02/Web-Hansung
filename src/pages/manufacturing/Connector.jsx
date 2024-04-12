@@ -6,8 +6,7 @@ import { useInView } from 'react-intersection-observer';
 
 import connector1 from '../../images/Manufacturing/connector1.jpg';
 import connector2 from '../../images/Manufacturing/connector2.jpg';
-import hidefoot1 from '../../images/Manufacturing/hidefoot1.jpg';
-import hidefoot2 from '../../images/Manufacturing/hidefoot2.jpg';
+
 
 
 const containerVariants = {

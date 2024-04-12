@@ -1,0 +1,56 @@
+.hidefoot-container{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.hidefoot-description{
+    font-weight: 400;
+    padding: 1rem;
+    width: 35vw;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.hidefoot-top{
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    align-items: center;
+    position: relative;
+}
+
+.hidefoot-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70vw;
+    margin-top: 2vh;
+    position: relative;
+}
+
+.hidefoot-text{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin-left: 4vw;
+}
+
+.hidefoot-image1{
+    width: 25vw;
+    height: 37vh;
+}
+
+.hidefoot-image2{
+    width: 70vw;
+    height: 35vh;
+}
+
+.hidefoot-title{
+    width: 40vw;
+    padding: 1rem;
+    font-size: 4.5rem;
+}
