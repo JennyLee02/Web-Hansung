@@ -1,11 +1,11 @@
 .intro_container{
-    height: 90vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
-
+    padding: 3rem;
 }
 
 .offsite_description{
@@ -65,9 +65,59 @@ h2{
 .onsite_text{
     display: flex;
     flex-direction: column;
-    /* text-align: right; */
+
 }
 .offsite_text{
     display: flex;
     flex-direction: column;
 }
+
+
+@media screen and (max-width: 1300px){
+    
+    /* .snap-container{
+      scroll-snap-type: none;
+    } */
+
+    .intro_container{
+        padding: 0;
+        gap: 2rem;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+    .onsite_description, .offsite_description{
+        font-size: 12px;
+        width: 90vw;
+        padding: 0;
+        margin: 0;
+    }
+    .onsite_title, .offsite_title{
+        padding: 0;
+        margin: 0;
+    }
+    .offsite_text, .onsite_text{
+        z-index: 3;
+        position: absolute;
+        bottom: 1rem;
+    }
+    .offsite_content, .onsite_content{
+        position: relative;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 40vh;
+        padding: 0;
+    }
+    .offsite_image, .onsite_image{
+        position: absolute;
+        order: 2;
+        z-index: 2;
+        height: 65%;
+        width: 90%;
+        margin: 0;
+        top: 0;
+    }
+
+} 
+
