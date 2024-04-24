@@ -2,7 +2,9 @@
 
 .swiper-container {
     display: flex;
-    width: 100vw; 
+    width: 100vw;
+    max-width: 100%; 
+    overflow: hidden;
     height: 90vh; 
     position: relative; 
     justify-content: center;
@@ -15,8 +17,9 @@
     justify-content: center;
     align-items: center;
   }
+
   .swiper-slide {
-    max-width: 200px;
+    max-width: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +33,7 @@
   .types{
     font-family: 'Lato';
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1rem;
   }
   
   /* Adjust the gap between slides */
@@ -45,7 +48,7 @@
   }
   
   .swiper-slide-duplicate {
-    opacity: 0.6; /* Duplicates have lower opacity */
+    opacity: 0.6 !important; /* Duplicates have lower opacity */
   }
   
   /* Remove Swiper's default shadow effects */
@@ -65,21 +68,21 @@
     width: 70vw;
   }
 
-  .swiper-btn-next {
+  .arrow-next {
     position: absolute;
-    right: 2rem; 
+    right: 27vw;
+    top: 11vh;
+  }
+
+  .arrow-prev{
+    position: absolute;
+    left: 27vw;
+    top: 11vh;
   }
   
-  .swiper-btn-prev {
-    position: absolute;
-    left:2rem; 
-  }
-  
-  /* Style icons directly if they are not styled as expected */
-  .slider-arrow .arrow-back,
-  .slider-arrow .arrow-forward {
+  .slider-arrow{
     color: #222224;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   
   /* Override any other shadow or gradient styles that might be coming from elsewhere */
@@ -108,3 +111,38 @@
     height: 100%;
     width: auto;
   }
+
+
+@media screen and (max-width: 600px){
+  .swiper-container{
+    height: 100vh;
+    flex-direction: column;
+  }
+  .TextSwiper {
+    top: 5vh;
+    height: 15vh;
+  }
+
+  .swiper-slide {
+      font-size: 8px; /* Even smaller font size */
+      width: 100px;
+  }
+  .TextSwiper{
+    width: 90vw;
+  }
+
+  .types {
+      font-size: 10px; /* Reduce font size for small screens */
+      width: fit-content;
+  }
+
+  .swiper-btn-next, .swiper-btn-prev {
+      top: 50%; 
+      transform: translateY(-50%); 
+  }
+
+  .blueprint-container {
+      height: 50vh; 
+  }
+
+}

@@ -93,7 +93,7 @@ const Projects = () => {
             )}
             <div className="project-info">
               <p className="title">{project.attributes.title}</p>
-              <p className='previewshouldn'>{project.attributes.preview}</p>
+              <p className='preview'>{project.attributes.preview}</p>
             </div>
           </Link>
         ))}

@@ -73,7 +73,7 @@ h2{
 }
 
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1000px){
     
     /* .snap-container{
       scroll-snap-type: none;
@@ -88,7 +88,7 @@ h2{
         font-size: 24px;
     }
     .onsite_description, .offsite_description{
-        font-size: 12px;
+        font-size: 14px;
         width: 90vw;
         padding: 0;
         margin: 0;
@@ -100,7 +100,7 @@ h2{
     .offsite_text, .onsite_text{
         z-index: 3;
         position: absolute;
-        bottom: 1rem;
+        bottom: 0;
     }
     .offsite_content, .onsite_content{
         position: relative;

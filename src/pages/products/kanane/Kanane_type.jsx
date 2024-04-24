@@ -38,10 +38,12 @@ const Kanane_type = () => {
     <div className='swiper-container'>
       <Swiper
        onSlideChange={handleSlideChange}
-      effect="coverflow"
+       loopFillGroupWithBlank={true}
+      effect={"coverflow"}
       grabCursor={true}
       centeredSlides={true}
       slidesPerView='auto'
+      spaceBetween={15}
       loop={true}
       coverflowEffect={{
         rotate: 0,
@@ -50,11 +52,7 @@ const Kanane_type = () => {
           modifier: 2.5,
       }}
       modules={[EffectCoverflow, Navigation, Pagination]}
-      navigation={{
-        nextE1:'.swiper-btn-next',
-        prevE1:'.swiper-btn-prev',
-        clickable:true,
-      }}
+      navigation={{ nextEl: ".arrow-next", prevEl: ".arrow-prev" }}
       initialSlide={2}
       className="TextSwiper"
     >
@@ -63,15 +61,9 @@ const Kanane_type = () => {
                 <h2 className='types'>{slide.name}</h2>
           </SwiperSlide>
         ))}
-      <div className="slider-controller">
-        <div className="swiper-btn-prev slider-arrow">
-            <MdArrowBackIos className='arrow-back'></MdArrowBackIos>
-        </div>
-        <div className="swiper-btn-next slider-arrow">
-            <MdArrowForwardIos className='arrow-forward'></MdArrowForwardIos>
-        </div>
-      </div>
     </Swiper>
+    <MdArrowBackIos className='arrow-prev slider-arrow'/>
+    <MdArrowForwardIos className='arrow-next slider-arrow'/>
     <div className="blueprint-container">
         <img 
           src={activeSlide.blueprint} 
